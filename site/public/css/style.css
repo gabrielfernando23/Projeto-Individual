@@ -4,7 +4,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Barlow', "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background-color: black;
+  background-color: #006400;
 }
 
 .container {
@@ -14,7 +14,7 @@ body {
 }
 
 .header {
-  border-bottom: 3px solid #32b9cd;
+  border-bottom: 3px solid white;
 }
 
 .header .container {
@@ -23,7 +23,7 @@ body {
 
 .header a {
   text-decoration: none;
-  color: #e3b062;
+  color: white;
 }
 
 .agora {
@@ -36,12 +36,12 @@ body {
   align-items: center;
   justify-content: space-between;
   list-style: none;
-  color: #e3b062;
+  color: white;
 }
 
 
 .titulo {
-  color: #32b9cd;
+  /* color: */
   width: fit-content;
   font-weight: 500;
 }
@@ -53,80 +53,61 @@ body {
   height: fit-content;
   padding: 40px 0;
   color: white;
-  background-image: url(".././assets/imgs/bg-jelly-fish-para_outras_pags.png");
   background-size: cover;
 }
 
 .banner .container {
-  height: 400px;
+  height: 700px;
+  width: 100%;
   font-size: 36px;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  
 }
+
+.container #img-cris{
+  display: flex;
+  opacity: 90%;
+  justify-content: right;
+}
+
+.container .jogos{
+  display: flex;
+  background-color: white;
+  border-radius: 15px;
+  width: 600px;
+  height: 600px;
+  justify-content: left;
+  margin-right: 5px;
+  margin-left: 50px;
+}
+
+.container .jogos h1{
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  color: black;
+  width: 100%;
+}
+
 
 .tamanho-conteudo { 
   height: fit-content !important;
-}
-
-.banner p {
-  width: 50%;
-  margin: 0;
-  padding: 0;
-  width: 280px;
-  font-size: 36px;
 }
 
 .banner .container span {
   font-weight: 800;
 }
 
-/* missao visao valores */
-
-.social {
-  background-color: #e5e5e5;
-  display: flex;
-}
-
-.social .container{
-  justify-content: center;
-}
-
-.box img {
-  width: 170px;
-}
-
-.social .container .boxes {
-  display: flex;
-}
-
-.social p {
-  text-align: center;
-}
-
-.box {
-  margin: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-
-.box {
-  margin-top: 50px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-
 /* FOOTER */
 
 .footer {
-  background-color: #32b9cd;
-  height: 150px;
-  color: #fff;
+  background-color: white;
+  height: 100px;
+  color: black;
   display: flex;
   font-size: 15px;
+  border-top: solid 3px black;
 }
 
 .footer .container {
@@ -147,23 +128,11 @@ body {
   width: 400px;
   display: flex;
   flex-direction: column;
-  color: palevioletred;
+  /* color: palevioletred; */
   align-items: center;
   border-radius: 4px;
 }
 
-.card {
-  display: flex;
-  justify-content: space-around;
-}
-
-.card h2 {
-  font-size: 30px;
-}
-
-.card h4 {
-  font-size: 16px;
-}
 
 .banner #div_erros_login {
   margin-top: 15px;
@@ -238,115 +207,4 @@ input {
 .loading-div img {
   height: 50px;
   width: 50px;
-}
-
-/* PAGINA DOS GRÁFICOS */
-
-.janela {
-  display: flex;
-  width: 100vw;
-}
-
-.header-left a {
-  text-decoration: none;
-  color: white;
-}
-
-.header-left {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 999;
-  height: 100vh;
-  width: 25%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  border-right: 3px solid #32b9cd;
-  background-color: #212124;
-  /* border: 3px solid pink; */
-}
-
-.dash-right {
-  display: flex;
-  width: 75%;
-  height: fit-content;
-  background-color: #161618;
-  position: relative;
-  top: 0;
-  left: 25%;
-}
-
-.header-left h1 {
-  color: #32b9cd;
-}
-
-.hello {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-
-.hello h3 {
-  color: #e3b062;
-  font-weight: 300;
-  font-size: 1.2rem;
-}
-
-.hello h3 span {
-  font-weight: 800;
-}
-
-.btn-nav {
-  width: 40%;
-  color: white;
-  background-color: #e6005a;
-  border-radius: 5px;
-  text-align: center;
-  padding: 2% 5%;
-}
-
-.btn-nav-white {
-  width: 40%;
-  background-color: white;
-  border: 3px solid #e6005a;
-  border-radius: 5px;
-  text-align: center;
-  padding: 2% 5%;
-}
-
-.btn-nav-white h3 {
-  color: #e6005a;
-  padding: 0;
-  margin: 0;
-}
-
-.btn-nav h3,
-.btn-logout h3 {
-  margin: 0;
-  padding: 0;
-}
-
-.btn-logout {
-  margin: 0;
-  padding: 0;
-  width: 20%;
-  background-color: #32b9cd;
-  color: white;
-  border-radius: 10px;
-  text-align: center;
-  padding: 10px 15px;
-  margin-bottom: 100px;
-  cursor: pointer;
-}
-
-/* pagina extra - simulador */
-.simulador {
-  color: white;
-
-}
-
-.simulador .container {
-  flex-direction: column
 }
