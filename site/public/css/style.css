@@ -19,6 +19,7 @@ body {
 
 .header .container {
   justify-content: space-between;
+  height: 90px;
 }
 
 .header a {
@@ -60,36 +61,206 @@ body {
   height: 700px;
   width: 100%;
   font-size: 36px;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: center;
   
 }
 
 .container #img-cris{
   display: flex;
-  opacity: 90%;
   justify-content: right;
+  margin-top: 23px;
 }
 
 .container .jogos{
   display: flex;
   background-color: white;
   border-radius: 15px;
-  width: 600px;
-  height: 600px;
-  justify-content: left;
-  margin-right: 5px;
-  margin-left: 50px;
+  width: 100vw;
+  height: 90vh;
+  justify-content: space-around;
+  margin-right: 15vw;
+  margin-left: 10vw;
+  flex-direction: column;
+  
 }
 
 .container .jogos h1{
   display: flex;
   justify-content: center;
-  font-size: 30px;
+  font-size: 35px;
   color: black;
   width: 100%;
 }
 
+.container .jogos .data-jogos{
+  display: flex;
+  flex-direction: row;
+  width: 16vw;
+  height: 45px;
+  justify-content: center;
+  align-items: center;
+  margin-right: 24vh;
+  margin-left: 24vh;
+  margin-top: 2vh;
+}
+
+.jogos .data-jogos a{
+text-decoration: none;
+color: black;
+font-weight: 700;
+}
+
+.jogos .lista-jogos{
+  display: flex;
+  /* background-color: #cedbd2; */
+  width: 34vw;
+  height: 70vh;
+  margin-left: 2vw;
+  margin-right: 2vw;
+  margin-top: 2vh;
+  flex-direction: column;
+  justify-content: space-around;
+  border-radius: 15px;
+}
+
+.lista-jogos .jogo1{
+  display: flex;
+  flex-direction: row;
+  width: 100% ;
+  height: 6vh;
+  justify-content: center;
+}
+
+.jogo1 .horario{
+  width: 20%;
+}
+
+
+
+.lista-jogos .jogo2{
+  display: flex;
+  flex-direction: row;
+  width: 100% ;
+  height: 6vh;
+  justify-content: center;
+}
+
+.lista-jogos .jogo3{
+  display: flex;
+  flex-direction: row;
+  width: 100% ;
+  height: 6vh;
+  justify-content: center;
+}
+
+.lista-jogos .jogo4{
+  display: flex;
+  flex-direction: row;
+  width: 100% ;
+  height: 6vh;
+  justify-content: center;
+}
+
+.lista-jogos .jogo5{
+  display: flex;
+  flex-direction: row;
+  width: 100% ;
+  height: 6vh;
+  justify-content: center;
+}
+
+.lista-jogos .jogo6{
+  display: flex;
+  flex-direction: row;
+  width: 100% ;
+  height: 6vh;
+  justify-content: center;
+}
+
+.lista-jogos .jogo7{
+  display: flex;
+  flex-direction: row;
+  width: 100% ;
+  height: 6vh;
+  justify-content: center;
+}
+
+.lista-jogos .jogo8{
+  display: flex;
+  flex-direction: row;
+  width: 100% ;
+  height: 6vh;
+  justify-content: center;
+}
+
+.lista-jogos .jogo9{
+  display: flex;
+  flex-direction: row;
+  width: 100% ;
+  height: 6vh;
+  justify-content: center;
+}
+
+.lista-jogos .jogo10{
+  display: flex;
+  flex-direction: row;
+  width: 100% ;
+  height: 6vh;
+  justify-content: center;
+}
+
+
+.lista-jogos .time1{
+  display: flex;
+  width: 40%;
+  border: 2px black solid;
+  border-top-left-radius: 40px;
+  border-bottom-left-radius: 40px;
+  border-right: none;
+}
+
+.lista-jogos .time2{
+  display: flex;
+  width: 40%;
+  border: 2px black solid;
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+  border-left: none;
+}
+.lista-jogos .horario{
+  display: flex;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  color: black;
+  font-size: 0.70em;
+  justify-content: center;
+}
+
+.lista-jogos .nome-selecao{
+  color: black;
+  font-size: 25px;
+  align-items: center;
+  width: 65%;
+}
+.time1 .imagem-selecao{
+  margin-left: 1vw;
+}
+.time1 .nome-selecao{
+  margin-left: 3vw;
+  margin-top: 0.5vh;
+  margin-bottom: 1vh;
+}
+.time2 .nome-selecao{
+  margin-right: 3vw;
+  margin-top: 0.5vh;
+  margin-bottom: 1vh;
+}
+.horario span{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .tamanho-conteudo { 
   height: fit-content !important;
