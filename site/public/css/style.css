@@ -9,7 +9,16 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Barlow', "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background-color:black ;
+
+}
+
+.header{
+  display: flex;
+  height: 12vh;
+  width: 100%;
+  position: fixed;
+  background-color: black;
+  border-bottom: solid 5px rgb(30, 30, 30);
 }
 
 .container {
@@ -18,13 +27,9 @@ body {
   display: flex;
 }
 
-.header {
-  border-bottom: 3px solid white;
-}
-
 .header .container {
-  justify-content: space-between;
-  height: 90px;
+  justify-content: center;
+  height: 8vh;
 }
 
 .header a {
@@ -32,38 +37,43 @@ body {
   color: white;
 }
 
+.header a:hover{
+  text-decoration:underline;
+  font-weight: 300;
+  text-shadow: 1px 0px 5px black;
+}
+
 .agora {
   font-weight: 800;
 }
 
 .navbar {
-  width: 300px;
+  width: 55%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   list-style: none;
   color: white;
+  font-size: 20px;
 }
-
-
-.titulo {
-  /* color: */
-  width: fit-content;
-  font-weight: 500;
-}
-
 
 /* BANNER */
 
+.all{
+  display: flex;
+  flex-direction: column;
+}
+
+
 .banner {
-  height: fit-content;
+  height: 170vh;
   padding: 40px 0;
-  background-image: url("https://github.com/gabrielfernando23/Projeto-Individual/blob/main/site/public/assets/imgs/World%20Cup%20Remastered.jpg");
+  background-image: url("../assets/imgs/soccer-players-action-professional-stadium.jpg");
   background-size: cover;
 }
 
 .banner .container {
-  height: 700px;
+  height: 900px;
   width: 100%;
   font-size: 36px;
   justify-content: center;
@@ -71,18 +81,11 @@ body {
   
 }
 
-.container #img-cris{
-  display: flex;
-  justify-content: right;
-  margin-top: 23px;
-  margin-right: 20vw;
-}
-
 .container .jogos{
-  display: flex;
+  display: flex;;
   background-color: white;
   border-radius: 15px;
-  width: 50vw;
+  width: 40vw;
   height: 70vh;
   justify-content: space-around;
   margin-right: 5vw;
@@ -102,11 +105,11 @@ body {
 
 .container .jogos .data-jogos{
   display: flex;
-  width: 8.5vw;
+  width: 8vw;
   height: 45px;
   justify-content: center;
   align-items: center;
-  margin-left: 16vw;
+  margin-left: 15vw;
   margin-top: 2vh;
   border: solid black 3px;
   border-radius: 35px;
@@ -117,7 +120,7 @@ body {
 .jogos .lista-jogos{
   display: flex;
   /* background-color: #cedbd2; */
-  width: 36vw;
+  width: 34vw;
   height: 50vh;
   margin-left: 3vw;
   margin-right: 2vw;
@@ -185,6 +188,8 @@ body {
   border-right: none;
 }
 
+.time1 i{}
+
 .lista-jogos .time2{
   display: flex;
   width: 40%;
@@ -208,22 +213,35 @@ body {
   align-items: center;
   width: 80%;
 }
-.time1 .imagem-selecao{
-  margin-left: 4vw;
-}
-.time2 .imagem-selecao{
-  margin-right: 4vw;
-}
+
 .time1 .nome-selecao{
-  margin-left: 1vw;
+  margin-left: 0.5vw;
   margin-top: 0.5vh;
   margin-bottom: 1vh;
   text-align: right;
 }
+
+.time1 i{
+  display: flex;
+  margin-left: 1vw;
+  align-items: center;
+}
+
+.time2 i{
+  display: flex;
+  margin-right: 1vw;
+  align-items: center;
+}
+
 .time2 .nome-selecao{
+  margin-right: 0.5vw;
   margin-top: 0.5vh;
   margin-bottom: 1vh;
   text-align: left;
+}
+
+.time2 .imagem-selecao{
+  margin-left:0px
 }
 
 .horario span{
@@ -232,11 +250,6 @@ body {
   align-items: center;
 }
 
-.time1 i{
-  color: black;
-  width: 5vw;
-  height: 5vh;
-}
 .tamanho-conteudo { 
   height: fit-content !important;
 }
@@ -270,15 +283,20 @@ body {
 
 .banner .container .card {
   background-color: #e5e5e5;
-  height: fit-content;
-  width: 400px;
+  height: 70vh;
+  width: 60vh;
   display: flex;
   flex-direction: column;
   /* color: palevioletred; */
   align-items: center;
-  border-radius: 4px;
+  border-radius: 6px;
+  margin-top: 22vh;
 }
 
+.banner .container h2{
+  font-size: 50px;
+  margin-top: 10px;
+}
 
 .banner #div_erros_login {
   margin-top: 15px;
@@ -313,18 +331,19 @@ button {
 }
 
 .formulario .tipo_campo {
-  font-size: 20px;
+  font-size: 25px;
   font-weight: 600 !important;
 }
 
 .formulario {
   display: flex;
   flex-direction: column;
+  margin-top: 25px;
 }
 
 input {
   margin-bottom: 10px;
-  border: 2px solid #32b9cd;
+  border: 2px solid black;
   padding: 10px;
   text-align: center;
   border-radius: 10px;
@@ -335,13 +354,13 @@ input {
   border: 0;
   border-radius: 5px;
   font-weight: 600;
-  font-size: 18px;
+  font-size: 22px;
   padding: 10px 15px;
   color: white;
-  background-color: #e6005a;
-  width: 120px;
+  background-color: black;
+  width: 150px;
   align-self: center;
-  margin-top: 5px;
+  margin-top: 15px;
 }
 
 .loading-div {
