@@ -1,36 +1,49 @@
 .banner{
     display: flex;
-    height: 2500px;
+    height: 2900px;
 }
 
 .banner .container{
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
-    background-color: pink;
-    height: 1960px;
-    margin-top: 500px;
+    background-color: black;
+    height: 2560px;
+    width: 1400px;
+    margin-top: 200px;
+    border-radius: 20px;
 }
 
 .titulo{
+    display: flex;
     padding-top: 30px;
+    /* border: solid 2px black; */
+    width: 1300px;
+    margin-top: 50px;
+    justify-content: center;
 }
 
 .titulo span{
-    font-size: 70px;
-    font-weight: 600;
+    font-size: 45px;
+    font-weight: 700;
+    text-align: center;
+    color: white;
 }
 
 .container .conteudo{
     margin-top: 20px;
+    /* border: solid 2px black; */
+    width: 1300px;
     display: flex;
     flex-direction: row;
 }
 
 .conteudo .imagem{
-    border: solid 3px black;
-    width: 800px;
-    height: 1000px;
+    /* border: solid 3px black; */
+    width: 600px;
+    height: 800px;
+    margin-left: 50px;
+    margin-top: 100px;
     background-image: url("../assets/imgs/idolos-selecoes.jpg");
     background-repeat: no-repeat;
 }
@@ -38,9 +51,108 @@
 
 .conteudo .texto{
     margin-top: 100px;
-    width: 500px;
+    width: 570px;
     height: 800px;
-    border: solid 2px black;
-    margin-left: 150px;
+    /* border: solid 2px black; */
+    margin-left: 50px;
     text-align: left;
+    font-size: 30px;
+    color: white;
+}
+
+.container .conteudo-2{
+    /* border: solid 2px black; */
+    width: 1300px;
+    margin-top: 100px;
+    height: 900px;
+    font-size: 30px;
+    padding: 15px 15px;
+    color: white;
+}
+
+.conteudo-2 #fonte{
+    text-align: right;
+    margin-right: 15px;
+    color: white;
+}
+
+.conteudo-2 a{
+    text-decoration: none;
+    color: white;
+}
+
+.container .odds{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+    /* border: solid 2px black; */
+    width: 700px;
+    margin-top: 50px;
+    height: 350px;
+}
+
+table{
+    display: flex;
+    justify-content: center;
+    border: solid 2px black;
+    background-color: white;
+    height: 240px;
+    width: 750px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+tr{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    text-align: center;
+    margin-top: 15px;
+}
+
+td{
+    background-color: cornsilk;
+}
+
+table .nome{
+    font-size: 40px;
+    border: solid 1px black;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 55px;
+}
+
+table .bet-365{
+    width: 150px;
+    height: 55px;
+    border-radius: 10px;
+    border: solid 1px black;
+    background-image: url(../assets/imgs/bet-365.png);
+    background-repeat: no-repeat;
+}
+table .odd{
+    border-radius: 10px;
+    border: solid 1px black;
+    width: 100px;
+    height: 55px;
+    font-weight: 650;
+}
+
+.odds .tit{
+    display: flex;
+    border: solid 2px black;
+    background-color: rgb(137, 131, 131);
+    color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 65px;
+    width: 750px;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
 }
