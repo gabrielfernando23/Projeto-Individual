@@ -1,0 +1,84 @@
+.banner .container{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    flex-direction: row;
+}
+
+.banner .container .card-cadastro {
+    display: flex;
+    background-color: #e5e5e5;
+    height: 900px;
+    width: 60vh;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container .esquerda{
+    display: flex;
+    height: 900px;
+    width: 1150px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .banner {
+    display: flex;
+    height: 124vh;
+    padding: 40px 0;
+    background-image: url("../assets/imgs/background-blur.png");
+    background-size: cover;
+  }
+
+  .esquerda .card-saudacao{
+    display:flex;
+    height: 250px;
+    width: 600px;
+    /* border: white solid 2px; */
+    color: white;
+    font-size: 100px;
+    font-weight: 700;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .card-cadastro .voltar{
+    margin-right: 320px;
+  }
+
+  .formulario {
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+  }
+  
+  .formulario input {
+    margin-bottom: 10px;
+    border: 2px solid black;
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 10px;
+  }
+
+  .formulario .tipo_campo {
+    font-size: 30px;
+    font-weight: 600 !important;
+  }
+  
+  .btn {
+    font-family: "Barlow", sans-serif;
+    border: 0;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 30px;
+    padding: 10px 15px;
+    color: white;
+    background-color: black;
+    width: 300px;
+    align-self: center;
+    margin-top: 15px;
+  }
+

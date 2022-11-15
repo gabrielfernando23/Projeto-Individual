@@ -1,0 +1,46 @@
+.banner{
+    display: flex;
+    height: 2500px;
+}
+
+.banner .container{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    background-color: pink;
+    height: 1960px;
+    margin-top: 500px;
+}
+
+.titulo{
+    padding-top: 30px;
+}
+
+.titulo span{
+    font-size: 70px;
+    font-weight: 600;
+}
+
+.container .conteudo{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.conteudo .imagem{
+    border: solid 3px black;
+    width: 800px;
+    height: 1000px;
+    background-image: url("../assets/imgs/idolos-selecoes.jpg");
+    background-repeat: no-repeat;
+}
+
+
+.conteudo .texto{
+    margin-top: 100px;
+    width: 500px;
+    height: 800px;
+    border: solid 2px black;
+    margin-left: 150px;
+    text-align: left;
+}

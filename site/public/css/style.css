@@ -66,21 +66,23 @@ body {
 
 
 .banner {
-  height: 170vh;
+  display: flex;
+  height: 124vh;
   padding: 40px 0;
-  background-image: url("../assets/imgs/soccer-players-action-professional-stadium.jpg");
+  background-image: url("../assets/imgs/background-blur.png");
   background-size: cover;
 }
 
 .banner .container {
+  display: flex;
   height: 900px;
   width: 100%;
   font-size: 36px;
   justify-content: center;
   align-items: center;
-  
 }
 
+/* Jogos do dia */
 .container .jogos{
   display: flex;;
   background-color: white;
@@ -92,7 +94,7 @@ body {
   margin-left: 8vw;
   flex-direction: column;
   border: solid black 2px;
-  box-shadow: 2px 5px 10px black;
+  box-shadow: 3px 7px 15px black;
 }
 
 .container .jogos h1{
@@ -119,7 +121,6 @@ body {
 
 .jogos .lista-jogos{
   display: flex;
-  /* background-color: #cedbd2; */
   width: 34vw;
   height: 50vh;
   margin-left: 3vw;
@@ -188,8 +189,6 @@ body {
   border-right: none;
 }
 
-.time1 i{}
-
 .lista-jogos .time2{
   display: flex;
   width: 40%;
@@ -240,33 +239,109 @@ body {
   text-align: left;
 }
 
-.time2 .imagem-selecao{
-  margin-left:0px
-}
-
 .horario span{
   display: flex;
   justify-content: center;
   align-items: center;
+  font-weight: 600;
 }
 
 .tamanho-conteudo { 
   height: fit-content !important;
 }
 
-.banner .container span {
+/* Times Favoritos */
+.times-favoritos{
+  display: flex;
+  background-color: white;
+  height: 720px;
+  width: 1030px;
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+  border: solid black 2px;
+  flex-direction: column;
+}
+
+.times-favoritos span{
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: 25px;
+  font-weight: 600;
+}
+
+.times-favoritos .times-favoritos-container{
+  border:solid 1px black;
+  height: 600px;
+  width: 980px;
+  border-radius: 20px;
+  flex-direction: column;
+  background-color: rgb(210,210,210);
+}
+
+.times-favoritos-container button{
+  border: none;
+}
+
+.colunas{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 15px;
+}
+
+.colunas .time{
+  display: flex;
+  border: solid 1px black;
+  border-radius: 20px;
+  height: 180px;
+  width: 170px;
+  justify-content: center;
+  align-items:center;
+  flex-direction: column;
+  background-color: white;
+  background-size: cover;
+}
+
+.colunas .time:hover{
+  box-shadow: 3px 0px 10px white;
+}
+
+.time img{
+  margin-top: 10px;
+}
+
+.time .barra-botao{
+  display: flex;
+  background-color: black;
+  height: 38px;
+  width: 170px;
+  margin-top: 10px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.barra-botao button{
+  background-color: #121211;
+  color: white;
+  width: 100px;
+  height: 28px;
+  border-radius: 10px;
+  border: solid 2px white;
   font-weight: 800;
 }
 
 /* FOOTER */
 
 .footer {
-  background-color: white;
+  background-color: black;
   height: 100px;
   color: black;
   display: flex;
   font-size: 15px;
-  border-top: solid 3px black;
+  border-top: solid 5px rgb(30, 30, 30);
 }
 
 .footer .container {
@@ -281,17 +356,16 @@ body {
 
 /* LOGIN */
 
-.banner .container .card {
+.banner .container .card-login {
   background-color: #e5e5e5;
-  height: 70vh;
+  height: 50vh;
   width: 60vh;
   display: flex;
   flex-direction: column;
-  /* color: palevioletred; */
   align-items: center;
-  border-radius: 6px;
-  margin-top: 22vh;
+  top: 5%;
 }
+
 
 .banner .container h2{
   font-size: 50px;
@@ -320,7 +394,7 @@ button {
   width: 230px;
   position: fixed;
   border-radius: 4px;
-  border: #e6005a 3px solid;
+  border: black 3px solid;
   padding: 10px;
   margin-right: 10%;
 }

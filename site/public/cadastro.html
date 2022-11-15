@@ -14,6 +14,7 @@
 
     <link rel="icon" href="">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style-cadastro.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link
         href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
@@ -32,12 +33,12 @@
                         Home
                     </a>
                 </li>
-                <li><a href="">Copa do Mundo Catar 2022</a></li>
+                <li><a href="copa-do-mundo-2022.html">Copa do Mundo Catar 2022</a></li>
                 <li>
                     <a href="./login.html">Login</a>
                 </li>
                 <li class="agora">
-                    <a href="./cadastro.html">Cadastro</a>
+                  Cadastro
                 </li>
             </ul>
         </div>
@@ -52,8 +53,13 @@
             </div>
         </div>
         <div class="container tamanho-conteudo">
-            <div class="card medio">
-                <h2>Bem-vindo!</h2>
+            <div class="esquerda">
+                <div class="card-saudacao">
+                    <span>Bem-vindo!</span>
+                </div>
+            </div>
+            <div class="card-cadastro">
+                <div class="voltar"><a href="index.html"><img src="assets/imgs/arrow.png" width="60px" alt="seta voltar"> </a></div>
                 <div class="formulario">
 
                     <!--
@@ -142,7 +148,7 @@
             if (resposta.ok) {
                 cardErro.style.display = "block";
 
-                mensagem_erro.innerHTML = "Cadastro realizado com sucesso! Redirecionando para tela de Login...";
+                // mensagem_erro.innerHTML = "Cadastro realizado com sucesso! Redirecionando para tela de Login...";
 
                 setTimeout(() => {
                     window.location = "cadastro-2.html";
