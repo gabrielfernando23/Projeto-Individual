@@ -38,8 +38,8 @@ body {
 }
 
 .header a:hover{
-  text-decoration:underline;
-  font-weight: 300;
+  /* text-decoration:underline; */
+  font-weight: 700;
   text-shadow: 1px 0px 5px black;
 }
 
@@ -67,7 +67,7 @@ body {
 
 .banner {
   display: flex;
-  height: 124vh;
+  height: 900px;
   padding: 40px 0;
   background-image: url("../assets/imgs/background-blur.png");
   background-size: cover;
@@ -79,12 +79,13 @@ body {
   width: 100%;
   font-size: 36px;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
 }
 
 /* Jogos do dia */
 .container .jogos{
-  display: flex;;
+  display: flex;
+  margin-top: 18vh;
   background-color: white;
   border-radius: 15px;
   width: 40vw;

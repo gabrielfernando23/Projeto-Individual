@@ -1,3 +1,4 @@
+
 .banner .container{
     display: flex;
     justify-content: right;
@@ -26,7 +27,7 @@
 
   .banner {
     display: flex;
-    height: 124vh;
+    height: 940px;
     padding: 40px 0;
     background-image: url("../assets/imgs/background-blur.png");
     background-size: cover;
