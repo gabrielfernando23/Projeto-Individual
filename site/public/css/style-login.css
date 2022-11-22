@@ -1,15 +1,20 @@
+.banner{
+  height: 900px;
+}
+
 .banner .container{
     display: flex;
     justify-content: right;
     align-items: center;
     flex-direction: row;
+    height: 900px;
 }
 
 .banner .container .card-login{
     display: flex;
     background-color: #e5e5e5;
     height: 900px;
-    width: 60vh;
+    width: 400px;
     display: flex;
     justify-content: space-around;
     flex-direction: column;
@@ -24,9 +29,9 @@
     align-items: center;
   }
 
-  .banner {
+  .banner{
     display: flex;
-    height: 124vh;
+    height: 940px;
     padding: 40px 0;
     background-image: url("../assets/imgs/background-blur.png");
     background-size: cover;

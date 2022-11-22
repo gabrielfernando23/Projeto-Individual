@@ -1,0 +1,91 @@
+.banner{
+height: 1200px;
+}
+
+.banner .container{
+  height: 1150px;
+}
+
+/* Times Favoritos */
+.times-favoritos{
+  display: flex;
+  background-color: white;
+  height: 720px;
+  width: 1030px;
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+  border: solid black 2px;
+  flex-direction: column;
+  margin-left: 250px;
+}
+
+.times-favoritos span{
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: 25px;
+  font-weight: 600;
+}
+
+.times-favoritos .times-favoritos-container{
+  border:solid 1px black;
+  height: 600px;
+  width: 980px;
+  border-radius: 20px;
+  flex-direction: column;
+  background-color: rgb(210,210,210);
+}
+
+.times-favoritos-container button{
+  border: none;
+}
+
+.colunas{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 15px;
+}
+
+.colunas .time{
+  display: flex;
+  border: solid 1px black;
+  border-radius: 20px;
+  height: 180px;
+  width: 170px;
+  justify-content: center;
+  align-items:center;
+  flex-direction: column;
+  background-color: white;
+  background-size: cover;
+}
+
+.colunas .time:hover{
+  box-shadow: 5px 0px 10px black;
+}
+
+.time img{
+  margin-top: 10px;
+}
+
+.time .barra-botao{
+  display: flex;
+  background-color: black;
+  height: 38px;
+  width: 170px;
+  margin-top: 10px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.barra-botao button{
+  background-color: #121211;
+  color: white;
+  width: 100px;
+  height: 28px;
+  border-radius: 10px;
+  border: solid 2px white;
+  font-weight: 800;
+}

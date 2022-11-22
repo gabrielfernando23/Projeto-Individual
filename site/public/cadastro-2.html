@@ -12,6 +12,7 @@
 
     <link rel="icon" href="">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style-cadastro-2.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <!-- <link
         href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
@@ -46,35 +47,35 @@
                             <div class="time" id="sp">
                                 <img src="assets/imgs/escudos-clubes/São Paulo.png" width="120px" alt="">
                                 <div class="barra-botao">                                
-                                    <button onclick="validar()">Selecionar</button>
+                                    <button onclick="saopaulo()">Selecionar</button>
                                 </div>
                             </div>
 
                             <div class="time">
                                 <img src="assets/imgs/escudos-clubes/Corinthians HD.png" width="120px" alt="">
                                 <div class="barra-botao">
-                                    <button onclick="validar()">Selecionar</button>
+                                    <button onclick="corinthians()">Selecionar</button>
                                 </div>
                             </div>
 
                             <div class="time">
                                 <img src="assets/imgs/escudos-clubes/Flamengo HD.png" width="120px" alt="">
                                 <div class="barra-botao">
-                                    <button onclick="validar()">Selecionar</button>
+                                    <button onclick="flamengo()">Selecionar</button>
                                 </div>
                             </div>
 
                             <div class="time">
                                 <img src="assets/imgs/escudos-clubes/Fluminense.png" width="120px" alt="">
                                 <div class="barra-botao">
-                                    <button onclick="validar()">Selecionar</button>
+                                    <button onclick="fluminense()">Selecionar</button>
                                 </div>
                             </div>
 
                             <div class="time">
                                 <img src="assets/imgs/escudos-clubes/Botafogo.png" width="120px" alt="">
                                 <div class="barra-botao">
-                                    <button onclick="validar()">Selecionar</button>
+                                    <button onclick="botafogo()">Selecionar</button>
                                 </div>
                             </div>
                         </div>
@@ -83,35 +84,35 @@
                             <div class="time">
                                 <img src="assets/imgs/escudos-clubes/Santos.png" width="120px" alt="">
                                 <div class="barra-botao">
-                                    <button onclick="validar()">Selecionar</button>
+                                    <button onclick="santos()">Selecionar</button>
                                 </div>
                             </div>
 
                             <div class="time">
                                 <img src="assets/imgs/escudos-clubes/Palmeiras.png" width="120px" alt="">
                                 <div class="barra-botao">
-                                    <button onclick="validar()">Selecionar</button>
+                                    <button onclick="palmeiras()">Selecionar</button>
                                 </div>
                             </div>
 
                             <div class="time">
                                 <img src="assets/imgs/escudos-clubes/Athletico Paranaense.png" width="120px" alt="">
                                 <div class="barra-botao">
-                                    <button onclick="validar()">Selecionar</button>
+                                    <button onclick="athletico()">Selecionar</button>
                                 </div>
                             </div>
 
                             <div class="time">
                                 <img src="assets/imgs/escudos-clubes/Atlético Goianiense HD.png" width="120px" alt="">
                                 <div class="barra-botao">
-                                    <button onclick="validar()">Selecionar</button>
+                                    <button onclick="atleticogo()">Selecionar</button>
                                 </div>
                             </div>
 
                             <div class="time">
                                 <img src="assets/imgs/escudos-clubes/Ceará.png" width="120px" alt="">
                                 <div class="barra-botao">
-                                    <button onclick="validar()">Selecionar</button>
+                                    <button onclick="ceara()">Selecionar</button>
                                 </div>
                             </div>
                         </div>
@@ -120,35 +121,35 @@
                             <div class="time">
                                 <img src="assets/imgs/escudos-clubes/Red Bull Bragantino.png" width="120px" alt="">
                                 <div class="barra-botao">
-                                    <button onclick="validar()">Selecionar</button>
+                                    <button onclick="bragantino()">Selecionar</button>
                                 </div>
                             </div>
 
                             <div class="time">
                                 <img src="assets/imgs/escudos-clubes/Coritiba.png" width="120px" alt="">
                                 <div class="barra-botao">
-                                    <button onclick="validar()">Selecionar</button>
+                                    <button onclick="coritiba()">Selecionar</button>
                                 </div>
                             </div>
 
                             <div class="time">
                                 <img src="assets/imgs/escudos-clubes/Internacional.png" width="120px" alt="">
                                 <div class="barra-botao">
-                                    <button onclick="validar()">Selecionar</button>
+                                    <button onclick="internacional()">Selecionar</button>
                                 </div>
                             </div>
 
                             <div class="time">
                                 <img src="assets/imgs/escudos-clubes/Cuiabá.png" width="120px" alt="">
                                 <div class="barra-botao">
-                                    <button onclick="validar()">Selecionar</button>
+                                    <button onclick="cuiaba()">Selecionar</button>
                                 </div>
                             </div>
 
                             <div class="time">
                                 <img src="assets/imgs/escudos-clubes/Fortaleza.png" width="120px" alt="">
                                 <div class="barra-botao">
-                                    <button onclick="validar()">Selecionar</button>
+                                    <button onclick="fortaleza()" >Selecionar</button>
                                 </div>
                             </div>
                         </div>
@@ -174,7 +175,131 @@
 </html>
 
 <script>
-    function validar(){
-        window.location.replace("index.html")
+
+function validar(){
+    window.location.replace("login.html")
+}
+
+
+var times_favoritos = []
+function saopaulo(){
+    if (times_favoritos.indexOf("São Paulo") != -1) {
+        alert("Esse time já foi selecionado")
     }
+    else{
+        times_favoritos.push("São Paulo")
+    }
+}
+function corinthians(){
+    if (times_favoritos.indexOf("Corinthians") != -1) {
+        alert("Esse time já foi selecionado")
+    }
+    else{
+    times_favoritos.push("Corinthians")
+    }
+}
+function flamengo(){
+    if (times_favoritos.indexOf("Flamengo") != -1) {
+        alert("Esse time já foi selecionado")
+    }
+    else{
+    times_favoritos.push("Flamengo")
+    }
+}
+function fluminense() {
+    if (times_favoritos.indexOf("Fluminense") != -1) {
+        alert("Esse time já foi selecionado")
+    }
+    else{
+    times_favoritos.push("Fluminense")
+    }
+}
+function botafogo() {
+    if (times_favoritos.indexOf("Botafogo") != -1) {
+        alert("Esse time já foi selecionado")
+    }
+    else{
+    times_favoritos.push("Botafogo")
+    }
+}
+function santos() {
+    if (times_favoritos.indexOf("Santos") != -1) {
+        alert("Esse time já foi selecionado")
+    }
+    else{
+    times_favoritos.push("Santos")
+    }
+}
+function palmeiras() {
+    if (times_favoritos.indexOf("Palmeiras") != -1) {
+        alert("Esse time já foi selecionado")
+    }
+    else{
+    times_favoritos.push("Palmeiras")
+    }
+}
+function athletico() {
+    if (times_favoritos.indexOf("Athlético Paranaense") != -1) {
+        alert("Esse time já foi selecionado")
+    }
+    else{
+    times_favoritos.push("Athlético Paranaense")
+    }
+}
+function atleticogo() {
+    if (times_favoritos.indexOf("Atlético Goianiense") != -1) {
+        alert("Esse time já foi selecionado")
+    }
+    else{
+    times_favoritos.push("Atlético Goianiense")
+    }
+}
+function ceara() {
+    if (times_favoritos.indexOf("Ceará") != -1) {
+        alert("Esse time já foi selecionado")
+    }
+    else{
+    times_favoritos.push("Ceará")
+    }
+}
+function bragantino() {
+    if (times_favoritos.indexOf("Red Bull Bragantino") != -1) {
+        alert("Esse time já foi selecionado")
+    }
+    else{
+    times_favoritos.push("Red Bull Bragantino")
+    }
+}
+function coritiba() {
+    if (times_favoritos.indexOf("Coritiba") != -1) {
+        alert("Esse time já foi selecionado")
+    }
+    else{
+    times_favoritos.push("Coritiba")
+    }
+}
+function internacional() {
+     if (times_favoritos.indexOf("Internacional") != -1) {
+        alert("Esse time já foi selecionado")
+    }
+    else{
+    times_favoritos.push("Internacional")
+    }
+}
+function cuiaba() {
+    if (times_favoritos.indexOf("Cuiabá") != -1) {
+        alert("Esse time já foi selecionado")
+    }
+    else{
+    times_favoritos.push("Cuiabá")
+    }
+}
+function fortaleza() {
+    if (times_favoritos.indexOf("Fortaleza") != -1) {
+        alert("Esse time já foi selecionado")
+    }
+    else{
+    times_favoritos.push("Fortaleza")
+    }
+}
 </script>
