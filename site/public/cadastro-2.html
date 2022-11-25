@@ -40,7 +40,7 @@
         <div class="banner">
             <div class="container">
                 <div class="times-favoritos">
-                    <span>Escolha seu time do coração</span>
+                    <span>Escolha seus times favoritos</span>
                     <div class="times-favoritos-container">
                         <div class="colunas">
 
@@ -153,6 +153,9 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="continuar">
+                            <button onclick="continuar()">Continuar</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -174,11 +177,7 @@
 
 </html>
 
-<script>
-
-function validar(){
-    window.location.replace("login.html")
-}
+<script defer>
 
 
 var times_favoritos = []
@@ -187,7 +186,7 @@ function saopaulo(){
         alert("Esse time já foi selecionado")
     }
     else{
-        times_favoritos.push("São Paulo")
+        times_favoritos.push("1")
     }
 }
 function corinthians(){
@@ -195,7 +194,7 @@ function corinthians(){
         alert("Esse time já foi selecionado")
     }
     else{
-    times_favoritos.push("Corinthians")
+    times_favoritos.push("2")
     }
 }
 function flamengo(){
@@ -203,7 +202,7 @@ function flamengo(){
         alert("Esse time já foi selecionado")
     }
     else{
-    times_favoritos.push("Flamengo")
+    times_favoritos.push("3")
     }
 }
 function fluminense() {
@@ -211,7 +210,7 @@ function fluminense() {
         alert("Esse time já foi selecionado")
     }
     else{
-    times_favoritos.push("Fluminense")
+    times_favoritos.push("4")
     }
 }
 function botafogo() {
@@ -219,7 +218,7 @@ function botafogo() {
         alert("Esse time já foi selecionado")
     }
     else{
-    times_favoritos.push("Botafogo")
+    times_favoritos.push("5")
     }
 }
 function santos() {
@@ -227,7 +226,7 @@ function santos() {
         alert("Esse time já foi selecionado")
     }
     else{
-    times_favoritos.push("Santos")
+    times_favoritos.push("6")
     }
 }
 function palmeiras() {
@@ -235,7 +234,7 @@ function palmeiras() {
         alert("Esse time já foi selecionado")
     }
     else{
-    times_favoritos.push("Palmeiras")
+    times_favoritos.push("7")
     }
 }
 function athletico() {
@@ -243,7 +242,7 @@ function athletico() {
         alert("Esse time já foi selecionado")
     }
     else{
-    times_favoritos.push("Athlético Paranaense")
+    times_favoritos.push("8")
     }
 }
 function atleticogo() {
@@ -251,7 +250,7 @@ function atleticogo() {
         alert("Esse time já foi selecionado")
     }
     else{
-    times_favoritos.push("Atlético Goianiense")
+    times_favoritos.push("9")
     }
 }
 function ceara() {
@@ -259,7 +258,7 @@ function ceara() {
         alert("Esse time já foi selecionado")
     }
     else{
-    times_favoritos.push("Ceará")
+    times_favoritos.push("10")
     }
 }
 function bragantino() {
@@ -267,7 +266,7 @@ function bragantino() {
         alert("Esse time já foi selecionado")
     }
     else{
-    times_favoritos.push("Red Bull Bragantino")
+    times_favoritos.push("10")
     }
 }
 function coritiba() {
@@ -275,7 +274,7 @@ function coritiba() {
         alert("Esse time já foi selecionado")
     }
     else{
-    times_favoritos.push("Coritiba")
+    times_favoritos.push("11")
     }
 }
 function internacional() {
@@ -283,7 +282,7 @@ function internacional() {
         alert("Esse time já foi selecionado")
     }
     else{
-    times_favoritos.push("Internacional")
+    times_favoritos.push("12")
     }
 }
 function cuiaba() {
@@ -291,7 +290,7 @@ function cuiaba() {
         alert("Esse time já foi selecionado")
     }
     else{
-    times_favoritos.push("Cuiabá")
+    times_favoritos.push("13")
     }
 }
 function fortaleza() {
@@ -299,7 +298,46 @@ function fortaleza() {
         alert("Esse time já foi selecionado")
     }
     else{
-    times_favoritos.push("Fortaleza")
+    times_favoritos.push("14")
     }
 }
+
+
+    function continuar(){
+
+        fetch("/usuarios/cadastrarTimes", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({
+                    // crie um atributo que recebe o valor recuperado aqui
+                    // Agora vá para o arquivo routes/usuario.js
+                    timesFavoritosServer: times_favoritos,
+                })
+            }).then(function (resposta) {
+    
+                console.log("resposta: ", resposta);
+    
+                if (resposta.ok) {
+                    cardErro.style.display = "block";
+    
+                    // mensagem_erro.innerHTML = "Cadastro realizado com sucesso! Redirecionando para tela de Login...";
+    
+                    setTimeout(() => {
+                        window.location = "login.html";
+                    }, "2000")
+                    
+                    limparFormulario();
+                    finalizarAguardar();
+                } else {
+                    throw ("Houve um erro ao tentar realizar o cadastro!");
+                }
+            }).catch(function (resposta) {
+                console.log(`#ERRO: ${resposta}`);
+                finalizarAguardar();
+            });
+    
+            return false;
+    }
 </script>

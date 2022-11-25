@@ -10,7 +10,7 @@ height: 1200px;
 .times-favoritos{
   display: flex;
   background-color: white;
-  height: 720px;
+  height: 770px;
   width: 1030px;
   border-radius: 20px;
   justify-content: center;
@@ -23,13 +23,13 @@ height: 1200px;
 .times-favoritos span{
   text-align: center;
   font-size: 50px;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
   font-weight: 600;
 }
 
 .times-favoritos .times-favoritos-container{
   border:solid 1px black;
-  height: 600px;
+  height: 650px;
   width: 980px;
   border-radius: 20px;
   flex-direction: column;
@@ -88,4 +88,27 @@ height: 1200px;
   border-radius: 10px;
   border: solid 2px white;
   font-weight: 800;
+}
+
+.times-favoritos-container .continuar{
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  height: 50px;
+  margin-top: 5px;
+}
+
+.continuar button{
+  background-color: #121211;
+  color: white;
+  width: 220px;
+  height: 47px;
+  border-radius: 10px;
+  border: solid 2px black;
+  font-weight: 800;
+  font-size: 30px;
+}
+
+.continuar button:hover{
+  box-shadow: 5px 0px 10px black;
 }
