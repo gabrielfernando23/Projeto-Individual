@@ -58,6 +58,7 @@ height: 1200px;
   flex-direction: column;
   background-color: white;
   background-size: cover;
+  cursor: pointer;
 }
 
 .colunas .time:hover{
@@ -66,28 +67,6 @@ height: 1200px;
 
 .time img{
   margin-top: 10px;
-}
-
-.time .barra-botao{
-  display: flex;
-  background-color: black;
-  height: 38px;
-  width: 170px;
-  margin-top: 10px;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
-  justify-content: center;
-  align-items: center;
-}
-
-.barra-botao button{
-  background-color: #121211;
-  color: white;
-  width: 100px;
-  height: 28px;
-  border-radius: 10px;
-  border: solid 2px white;
-  font-weight: 800;
 }
 
 .times-favoritos-container .continuar{

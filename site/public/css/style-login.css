@@ -1,5 +1,5 @@
 .banner{
-  height: 900px;
+  height: 700px;
 }
 
 .banner .container{
@@ -7,13 +7,13 @@
     justify-content: right;
     align-items: center;
     flex-direction: row;
-    height: 900px;
+    height: 700px;
 }
 
 .banner .container .card-login{
     display: flex;
     background-color: #e5e5e5;
-    height: 900px;
+    height: 630px;
     width: 400px;
     display: flex;
     justify-content: space-around;
@@ -23,7 +23,7 @@
 
   .container .esquerda{
     display: flex;
-    height: 900px;
+    height: 500px;
     width: 1150px;
     justify-content: center;
     align-items: center;
@@ -31,7 +31,6 @@
 
   .banner{
     display: flex;
-    height: 940px;
     padding: 40px 0;
     background-image: url("../assets/imgs/background-blur.png");
     background-size: cover;
@@ -51,6 +50,8 @@
 
   .card-login .voltar{
     margin-right: 320px;
+    margin-left: 20px;
+    margin-top: 40px;
   }
 
   .formulario {

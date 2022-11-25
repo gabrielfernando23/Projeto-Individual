@@ -44,113 +44,71 @@
                     <div class="times-favoritos-container">
                         <div class="colunas">
 
-                            <div class="time" id="sp">
+                            <div class="time" id="div_saopaulo" onclick="saopaulo()">
                                 <img src="assets/imgs/escudos-clubes/São Paulo.png" width="120px" alt="">
-                                <div class="barra-botao">                                
-                                    <button onclick="saopaulo()">Selecionar</button>
-                                </div>
                             </div>
 
-                            <div class="time">
+                            <div class="time" id="div_corinthians" onclick="corinthians()">
                                 <img src="assets/imgs/escudos-clubes/Corinthians HD.png" width="120px" alt="">
-                                <div class="barra-botao">
-                                    <button onclick="corinthians()">Selecionar</button>
-                                </div>
                             </div>
 
-                            <div class="time">
+                            <div class="time" id="div_flamengo" onclick="flamengo()">
                                 <img src="assets/imgs/escudos-clubes/Flamengo HD.png" width="120px" alt="">
-                                <div class="barra-botao">
-                                    <button onclick="flamengo()">Selecionar</button>
-                                </div>
                             </div>
 
-                            <div class="time">
+                            <div class="time" id="div_fluminense" onclick="fluminense()">
                                 <img src="assets/imgs/escudos-clubes/Fluminense.png" width="120px" alt="">
-                                <div class="barra-botao">
-                                    <button onclick="fluminense()">Selecionar</button>
-                                </div>
                             </div>
 
-                            <div class="time">
+                            <div class="time" id="div_botafogo" onclick="botafogo()">
                                 <img src="assets/imgs/escudos-clubes/Botafogo.png" width="120px" alt="">
-                                <div class="barra-botao">
-                                    <button onclick="botafogo()">Selecionar</button>
-                                </div>
                             </div>
                         </div>
 
                         <div class="colunas">
-                            <div class="time">
+                            <div class="time" id="div_santos" onclick="santos()">
                                 <img src="assets/imgs/escudos-clubes/Santos.png" width="120px" alt="">
-                                <div class="barra-botao">
-                                    <button onclick="santos()">Selecionar</button>
-                                </div>
                             </div>
 
-                            <div class="time">
+                            <div class="time" id="div_palmeiras" onclick="palmeiras()">
                                 <img src="assets/imgs/escudos-clubes/Palmeiras.png" width="120px" alt="">
-                                <div class="barra-botao">
-                                    <button onclick="palmeiras()">Selecionar</button>
-                                </div>
                             </div>
 
-                            <div class="time">
+                            <div class="time" id="div_athletico" onclick="athletico()">
                                 <img src="assets/imgs/escudos-clubes/Athletico Paranaense.png" width="120px" alt="">
-                                <div class="barra-botao">
-                                    <button onclick="athletico()">Selecionar</button>
-                                </div>
                             </div>
 
-                            <div class="time">
+                            <div class="time" id="div_atleticogo" onclick="atleticogo()">
                                 <img src="assets/imgs/escudos-clubes/Atlético Goianiense HD.png" width="120px" alt="">
-                                <div class="barra-botao">
-                                    <button onclick="atleticogo()">Selecionar</button>
-                                </div>
                             </div>
 
-                            <div class="time">
+                            <div class="time" id="div_ceara" onclick="ceara()">
                                 <img src="assets/imgs/escudos-clubes/Ceará.png" width="120px" alt="">
-                                <div class="barra-botao">
-                                    <button onclick="ceara()">Selecionar</button>
-                                </div>
                             </div>
                         </div>
 
                         <div class="colunas">
-                            <div class="time">
+                            <div class="time" id="div_bragantino">
                                 <img src="assets/imgs/escudos-clubes/Red Bull Bragantino.png" width="120px" alt="">
                                 <div class="barra-botao">
                                     <button onclick="bragantino()">Selecionar</button>
                                 </div>
                             </div>
 
-                            <div class="time">
+                            <div class="time" id="div_coritiba" onclick="coritiba()">
                                 <img src="assets/imgs/escudos-clubes/Coritiba.png" width="120px" alt="">
-                                <div class="barra-botao">
-                                    <button onclick="coritiba()">Selecionar</button>
-                                </div>
                             </div>
 
-                            <div class="time">
+                            <div class="time" id="div_internacional" onclick="internacional()">
                                 <img src="assets/imgs/escudos-clubes/Internacional.png" width="120px" alt="">
-                                <div class="barra-botao">
-                                    <button onclick="internacional()">Selecionar</button>
-                                </div>
                             </div>
 
-                            <div class="time">
+                            <div class="time" id="div_cuiaba" onclick="cuiaba()">
                                 <img src="assets/imgs/escudos-clubes/Cuiabá.png" width="120px" alt="">
-                                <div class="barra-botao">
-                                    <button onclick="cuiaba()">Selecionar</button>
-                                </div>
                             </div>
 
-                            <div class="time">
+                            <div class="time" id="div_fortaleza" onclick="fortaleza()">
                                 <img src="assets/imgs/escudos-clubes/Fortaleza.png" width="120px" alt="">
-                                <div class="barra-botao">
-                                    <button onclick="fortaleza()" >Selecionar</button>
-                                </div>
                             </div>
                         </div>
                         <div class="continuar">
@@ -182,126 +140,142 @@
 
 var times_favoritos = []
 function saopaulo(){
-    if (times_favoritos.indexOf("São Paulo") != -1) {
+    if (times_favoritos.indexOf("1") != -1) {
         alert("Esse time já foi selecionado")
     }
     else{
         times_favoritos.push("1")
+        div_saopaulo.style.border = '4px solid rgb(140, 19, 6)'
     }
 }
 function corinthians(){
-    if (times_favoritos.indexOf("Corinthians") != -1) {
+    if (times_favoritos.indexOf("2") != -1) {
         alert("Esse time já foi selecionado")
     }
     else{
     times_favoritos.push("2")
+    div_corinthians.style.border = '4px solid rgb(140, 19, 6)'
     }
 }
 function flamengo(){
-    if (times_favoritos.indexOf("Flamengo") != -1) {
+    if (times_favoritos.indexOf("3") != -1) {
         alert("Esse time já foi selecionado")
     }
     else{
     times_favoritos.push("3")
+    div_flamengo.style.border = '4px solid rgb(140, 19, 6)'
     }
 }
 function fluminense() {
-    if (times_favoritos.indexOf("Fluminense") != -1) {
+    if (times_favoritos.indexOf("4") != -1) {
         alert("Esse time já foi selecionado")
     }
     else{
     times_favoritos.push("4")
+    div_fluminense.style.border = '4px solid rgb(140, 19, 6)'
     }
 }
 function botafogo() {
-    if (times_favoritos.indexOf("Botafogo") != -1) {
+    if (times_favoritos.indexOf("5") != -1) {
         alert("Esse time já foi selecionado")
     }
     else{
     times_favoritos.push("5")
+    div_botafogo.style.border = '4px solid rgb(140, 19, 6)'
     }
 }
 function santos() {
-    if (times_favoritos.indexOf("Santos") != -1) {
+    if (times_favoritos.indexOf("6") != -1) {
         alert("Esse time já foi selecionado")
     }
     else{
     times_favoritos.push("6")
+    div_santos.style.border = '4px solid rgb(140, 19, 6)'
     }
 }
 function palmeiras() {
-    if (times_favoritos.indexOf("Palmeiras") != -1) {
+    if (times_favoritos.indexOf("7") != -1) {
         alert("Esse time já foi selecionado")
     }
     else{
     times_favoritos.push("7")
+    div_palmeiras.style.border = '4px solid rgb(140, 19, 6)'
     }
 }
 function athletico() {
-    if (times_favoritos.indexOf("Athlético Paranaense") != -1) {
+    if (times_favoritos.indexOf("8") != -1) {
         alert("Esse time já foi selecionado")
     }
     else{
     times_favoritos.push("8")
+    div_athletico.style.border = '4px solid rgb(140, 19, 6)'
     }
 }
 function atleticogo() {
-    if (times_favoritos.indexOf("Atlético Goianiense") != -1) {
+    if (times_favoritos.indexOf("9") != -1) {
         alert("Esse time já foi selecionado")
     }
     else{
     times_favoritos.push("9")
+    div_atleticogo.style.border = '4px solid rgb(140, 19, 6)'
     }
 }
 function ceara() {
-    if (times_favoritos.indexOf("Ceará") != -1) {
+    if (times_favoritos.indexOf("10") != -1) {
         alert("Esse time já foi selecionado")
     }
     else{
     times_favoritos.push("10")
+    div_ceara.style.border = '4px solid rgb(140, 19, 6)'
     }
 }
 function bragantino() {
-    if (times_favoritos.indexOf("Red Bull Bragantino") != -1) {
-        alert("Esse time já foi selecionado")
-    }
-    else{
-    times_favoritos.push("10")
-    }
-}
-function coritiba() {
-    if (times_favoritos.indexOf("Coritiba") != -1) {
+    if (times_favoritos.indexOf("11") != -1) {
         alert("Esse time já foi selecionado")
     }
     else{
     times_favoritos.push("11")
+    div_bragantino.style.border = '4px solid rgb(140, 19, 6)'
     }
 }
-function internacional() {
-     if (times_favoritos.indexOf("Internacional") != -1) {
+function coritiba() {
+    if (times_favoritos.indexOf("12") != -1) {
         alert("Esse time já foi selecionado")
     }
     else{
     times_favoritos.push("12")
+    div_coritiba.style.border = '4px solid rgb(140, 19, 6)'
     }
 }
-function cuiaba() {
-    if (times_favoritos.indexOf("Cuiabá") != -1) {
+function internacional() {
+     if (times_favoritos.indexOf("13") != -1) {
         alert("Esse time já foi selecionado")
     }
     else{
     times_favoritos.push("13")
+    div_internacional.style.border = '4px solid rgb(140, 19, 6)'
     }
 }
-function fortaleza() {
-    if (times_favoritos.indexOf("Fortaleza") != -1) {
+function cuiaba() {
+    if (times_favoritos.indexOf("14") != -1) {
         alert("Esse time já foi selecionado")
     }
     else{
     times_favoritos.push("14")
+    div_cuiaba.style.border = '4px solid rgb(140, 19, 6)'
+    }
+}
+function fortaleza() {
+    if (times_favoritos.indexOf("15") != -1) {
+        alert("Esse time já foi selecionado")
+    }
+    else{
+    times_favoritos.push("15")
+    div_fortaleza.style.border = '4px solid rgb(140, 19, 6)'
     }
 }
 
+     
 
     function continuar(){
 
@@ -313,7 +287,7 @@ function fortaleza() {
                 body: JSON.stringify({
                     // crie um atributo que recebe o valor recuperado aqui
                     // Agora vá para o arquivo routes/usuario.js
-                    timesFavoritosServer: times_favoritos,
+                    timesFavoritosServer: times_favoritos
                 })
             }).then(function (resposta) {
     

@@ -5,6 +5,7 @@ function testar(req, res) {
     res.send("ENTRAMOS NO AVISO CONTROLLER");
 }
 
+
 function listar(req, res) {
     avisoModel.listar().then(function (resultado) {
         if (resultado.length > 0) {

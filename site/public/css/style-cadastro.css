@@ -9,8 +9,8 @@
 .banner .container .card-cadastro {
     display: flex;
     background-color: #e5e5e5;
-    height: 900px;
-    width: 60vh;
+    height: 700px;
+    width: 400px;
     display: flex;
     justify-content: space-around;
     flex-direction: column;
@@ -19,7 +19,7 @@
 
   .container .esquerda{
     display: flex;
-    height: 900px;
+    height: 700px;
     width: 1150px;
     justify-content: center;
     align-items: center;
@@ -27,7 +27,7 @@
 
   .banner {
     display: flex;
-    height: 940px;
+    height: 740px;
     padding: 40px 0;
     background-image: url("../assets/imgs/background-blur.png");
     background-size: cover;
@@ -47,6 +47,8 @@
 
   .card-cadastro .voltar{
     margin-right: 320px;
+    margin-left: 20px;
+    margin-top: 40px;
   }
 
   .formulario {

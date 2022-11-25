@@ -37,7 +37,7 @@ function cadastrarTimes(times) {
     // Insira exatamente a query do banco aqui, lembrando da nomenclatura exata nos valores
     //  e na ordem de inserção dos dados.
     var instrucao = `
-        INSERT INTO torce (fkUsuario,fkTime) VALUES ('1','${times}');
+        INSERT INTO torce (fkUsuario,fkTime) VALUES ('${idUsuario}','${times}');
     `;
     console.log("Executando a instrução SQL: \n" + instrucao);
     return database.executar(instrucao);
