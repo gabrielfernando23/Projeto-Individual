@@ -11,18 +11,18 @@
     <script src="./js/funcoes.js"></script>
 
     <link rel="icon" href="">
-    <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style-stats.css">
 </head>
 
 <body>
-    <div class="all">
+    <!-- <div class="all">
         <div class="header">
             <div class="container">
                 <h1 class="titulo"></h1>
                 <ul class="navbar">
-                    <li class="agora">Home</li>
-                    <li><a href="copa-do-mundo-2022.html">Copa do Mundo Catar 2022</a></li>
+                    <li>Home</li>
                     <li>
                         <a href="./login.html">Login</a>
                     </li>
@@ -31,10 +31,30 @@
                     </li>
                 </ul>
             </div>
-        </div>
+        </div> -->
 
         <div class="banner">
             <div class="container">
+                <div class="quadro">
+                    <div class="menu">
+
+                        <div id="nome" class="barranav"><p><p style="color:red;">23</p>Scores</p></div>
+
+                        <div onclick="selecoesFavoritas()" class="barranav" id="selecao_favorita"><span >Seleções Favoritas</span></div>
+
+                        <div onclick="FaseDeGrupos()"  id="fase-grupos" class="barranav"><span>Fase de Grupos</span></div>
+
+                        <div onclick="Titulos()" class="barranav" id="titulos"><span>Títulos</span></div>
+
+                        <div onclick="Eliminatorias()" id="eliminatórias"class="barranav"><span>Eliminatórias</span></div
+>                   </div>
+                    <div class="conteudo" id="div_selecoes_favoritas" style="display:block; background-color: blue;"></div>
+                    <div class="conteudo" id="div_fase_grupos" style="display:none; background-color: yellow;"></div>
+                    <div class="conteudo" id="div_titulos" style="display:none; background-color: blueviolet;">
+                
+                    </div>
+                    <div class="conteudo" id="div_eliminatorias" style="display:none; background-color:brown;"></div>
+                </div>
             </div>
         </div>
     </div>
@@ -53,3 +73,33 @@
 </body>
 
 </html>
+<script>
+
+function selecoesFavoritas() {
+    div_selecoes_favoritas.style.display = "block"
+    div_fase_grupos.style.display = "none"
+    div_titulos.style.display = "none"
+    div_eliminatorias.style.display = "none"
+}
+
+function FaseDeGrupos() {
+    div_selecoes_favoritas.style.display = "none"
+    div_fase_grupos.style.display = "block"
+    div_titulos.style.display = "none"
+    div_eliminatorias.style.display = "none"
+}
+
+function Titulos() {
+    div_selecoes_favoritas.style.display = "none"
+    div_fase_grupos.style.display = "none"
+    div_titulos.style.display = "block"
+    div_eliminatorias.style.display = "none"
+}
+
+function Eliminatorias() {
+    div_selecoes_favoritas.style.display = "none"
+    div_fase_grupos.style.display = "none"
+    div_titulos.style.display = "none"
+    div_eliminatorias.style.display = "block"
+}
+</script>

@@ -95,16 +95,20 @@ function cadastrar(req, res) {
 }
 
 function cadastrarTimes(req, res) {
-    // Crie uma variável que vá recuperar os valores do arquivo cadastro.html
-    var times = req.body.timesFavoritosServer;
+    // Crie uma variável que vá recuperar os valores do arquivo cadastro-2.html
+    var selecao = req.body.selecaoServer;
+    var idUsuario = req.body.idUsuarioServer;
 
     // Faça as validações dos valores
-    if (times == undefined) {
+    if (selecao == undefined) {
         res.status(400).send("O vetor está undefined!");
+    }
+    else if (idUsuario == undefined){
+        res.status(400).send("O idUsuario está undefined!");
     } else {
         
         // Passe os valores como parâmetro e vá para o arquivo usuarioModel.js
-        usuarioModel.cadastrarTimes(times)
+        usuarioModel.cadastrarTimes(idUsuario,selecao)
             .then(
                 function (resultado) {
                     res.json(resultado);

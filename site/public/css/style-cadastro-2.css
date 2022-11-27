@@ -1,58 +1,65 @@
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .banner{
-height: 1200px;
+height: 1050px;
 }
 
 .banner .container{
-  height: 1150px;
+  display: flex;
+  height: 1000px;
+  justify-content: center;
 }
 
 /* Times Favoritos */
 .times-favoritos{
   display: flex;
   background-color: white;
-  height: 770px;
-  width: 1030px;
+  height: 850px;
+  width: 1175px;
   border-radius: 20px;
   justify-content: center;
   align-items: center;
   border: solid black 2px;
   flex-direction: column;
-  margin-left: 250px;
+  margin-left: 10%;
 }
 
 .times-favoritos span{
   text-align: center;
   font-size: 50px;
   margin-bottom: 20px;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .times-favoritos .times-favoritos-container{
   border:solid 1px black;
-  height: 650px;
-  width: 980px;
+  height: 737px;
+  width: 1135px;
   border-radius: 20px;
   flex-direction: column;
   background-color: rgb(210,210,210);
 }
 
-.times-favoritos-container button{
-  border: none;
-}
 
 .colunas{
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   margin-top: 15px;
+  margin-right: 5px;
+  margin-left: 5px;
 }
 
 .colunas .time{
   display: flex;
   border: solid 1px black;
   border-radius: 20px;
-  height: 180px;
-  width: 170px;
+  height: 150px;
+  width: 150px;
   justify-content: center;
   align-items:center;
   flex-direction: column;
@@ -65,27 +72,39 @@ height: 1200px;
   box-shadow: 5px 0px 10px black;
 }
 
-.time img{
-  margin-top: 10px;
+.time span{
+  font-size: 15px;
 }
+
+.time .estrela_on, .estrela_off{
+margin-left: 105px;
+margin-bottom:5px;
+margin-top: 10px;
+}
+
+.time .estrela_on{
+  display: none;
+}
+
 
 .times-favoritos-container .continuar{
   display: flex;
   justify-content:center;
   align-items: center;
   height: 50px;
-  margin-top: 5px;
+  margin-top: 10px;
+  margin-bottom: 5px;
 }
 
 .continuar button{
   background-color: #121211;
   color: white;
-  width: 220px;
-  height: 47px;
+  width: 350px;
+  height: 60px;
   border-radius: 10px;
   border: solid 2px black;
   font-weight: 800;
-  font-size: 30px;
+  font-size: 40px;
 }
 
 .continuar button:hover{

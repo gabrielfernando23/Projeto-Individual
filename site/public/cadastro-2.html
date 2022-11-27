@@ -23,15 +23,15 @@
     <div class="all">
         <div class="header">
         <div class="container">
-            <h1 class="titulo"></h1>
+            <span><span style="color:red;">23</span>Scores</span>
             <ul class="navbar">
-                <li class="agora">Home</li>
-                <li><a href="copa-do-mundo-2022.html">Copa do Mundo Catar 2022</a></li>
+                <li ><a href="index.html">Home</a></li>
+                <!-- <li><a href="copa-do-mundo-2022.html">Copa do Mundo Catar 2022</a></li> -->
                 <li>
                     <a href="./login.html">Login</a>
                 </li>
-                <li>
-                    <a href="./cadastro.html">Cadastro</a>
+                <li class="agora">
+                   Cadastro
                 </li>
             </ul>
         </div>
@@ -40,75 +40,239 @@
         <div class="banner">
             <div class="container">
                 <div class="times-favoritos">
-                    <span>Escolha seus times favoritos</span>
+                    <span>Escolha suas Seleções favoritas</span>
                     <div class="times-favoritos-container">
                         <div class="colunas">
 
-                            <div class="time" id="div_saopaulo" onclick="saopaulo()">
-                                <img src="assets/imgs/escudos-clubes/São Paulo.png" width="120px" alt="">
+                            <div class="time" id="div_arabia" onclick="arabia()">
+                                <img class="estrela_off" id="estrela_off_arabia" src="assets/imgs/star.png" width="25px"alt="estrela">
+                                <img class="estrela_on" id="estrela_active_arabia" src="assets/imgs/star-active.png" width="25px"alt="estrela">
+                                <img src="assets/imgs/Selecoes/ArabiaSaudita.png" width="80px" alt="">
+                                <span>Arábia Saudita</span>
                             </div>
 
-                            <div class="time" id="div_corinthians" onclick="corinthians()">
-                                <img src="assets/imgs/escudos-clubes/Corinthians HD.png" width="120px" alt="">
+                            <div class="time" id="div_argentina" onclick="argentina()">
+                                <img class="estrela_off" id="estrela_off_argentina" src="assets/imgs/star.png" width="25px"alt="estrela">
+                                <img class="estrela_on" id="estrela_active_argentina" src="assets/imgs/star-active.png" width="25px"alt="estrela">
+                                <img src="assets/imgs/Selecoes/Argentina.png" width="80px" alt="">
+                                <span>Argentina</span>
                             </div>
 
-                            <div class="time" id="div_flamengo" onclick="flamengo()">
-                                <img src="assets/imgs/escudos-clubes/Flamengo HD.png" width="120px" alt="">
+                            <div class="time" id="div_gales" onclick="gales()">
+                                <img class="estrela_off" id="estrela_off_gales" src="assets/imgs/star.png" width="25px"alt="estrela">
+                                <img class="estrela_on" id="estrela_active_gales" src="assets/imgs/star-active.png" width="25px"alt="estrela">
+                                <img src="assets/imgs/Selecoes/gales.png" width="80px" alt="">
+                                <span>País de Gales</span>
                             </div>
 
-                            <div class="time" id="div_fluminense" onclick="fluminense()">
-                                <img src="assets/imgs/escudos-clubes/Fluminense.png" width="120px" alt="">
+                            <!-- <div class="time" id="div_australia" onclick="australia()">
+                                <img class="estrela_off" id="estrela_off_australia" src="assets/imgs/star.png" width="25px"alt="estrela">
+                                <img class="estrela_on" id="estrela_active_australia" src="assets/imgs/star-active.png" width="25px"alt="estrela">
+                                <img src="assets/imgs/Selecoes/Austrália.png" width="80px" alt="">
+                                <span>Austrália</span>
+                            </div> -->
+
+                            <div class="time" id="div_belgica" onclick="belgica()">
+                                <img class="estrela_off" id="estrela_off_belgica" src="assets/imgs/star.png" width="25px"alt="estrela">
+                                <img class="estrela_on" id="estrela_active_belgica" src="assets/imgs/star-active.png" width="25px"alt="estrela">
+                                <img src="assets/imgs/Selecoes/Belgica.png" width="80px" alt="">
+                                <span>Bélgica</span>
                             </div>
 
-                            <div class="time" id="div_botafogo" onclick="botafogo()">
-                                <img src="assets/imgs/escudos-clubes/Botafogo.png" width="120px" alt="">
+                            <div class="time" id="div_alemanha" onclick="alemanha()">
+                                <img class="estrela_off" id="estrela_off_alemanha" src="assets/imgs/star.png" width="25px"alt="estrela">
+                                <img class="estrela_on" id="estrela_active_alemanha" src="assets/imgs/star-active.png" width="25px"alt="estrela">
+                                <img src="assets/imgs/Selecoes/Alemanha.png" width="80px" alt="">
+                                <span>Alemanha</span>
+                            </div>
+
+                            <div class="time" id="div_ghana" onclick="ghana()">
+                                <img class="estrela_off" id="estrela_off_ghana" src="assets/imgs/star.png" width="25px"alt="estrela">
+                                <img class="estrela_on" id="estrela_active_ghana" src="assets/imgs/star-active.png" width="25px"alt="estrela">
+                                <img src="assets/imgs/Selecoes/ghana.png" width="80px" alt="">
+                                <span>Ghana</span>
+                            </div>
+
+                            <div class="time" id="div_holanda" onclick="holanda()">
+                                <img class="estrela_off" id="estrela_off_holanda" src="assets/imgs/star.png" width="25px"alt="estrela">
+                                <img class="estrela_on" id="estrela_active_holanda" src="assets/imgs/star-active.png" width="25px"alt="estrela">
+                                <img src="assets/imgs/Selecoes/Holanda.png" width="80px" alt="">
+                                <span>Holanda</span>
                             </div>
                         </div>
 
                         <div class="colunas">
-                            <div class="time" id="div_santos" onclick="santos()">
-                                <img src="assets/imgs/escudos-clubes/Santos.png" width="120px" alt="">
+                            <div class="time" id="div_brasil" onclick="brasil()">
+                                <img class="estrela_off" id="estrela_off_brasil" src="assets/imgs/star.png" width="25px"alt="estrela">
+                                <img class="estrela_on" id="estrela_active_brasil" src="assets/imgs/star-active.png" width="25px"alt="estrela">
+                                <img src="assets/imgs/Selecoes/Brasil.png" width="80px" alt="">
+                                <span>Brasil</span>
                             </div>
 
-                            <div class="time" id="div_palmeiras" onclick="palmeiras()">
-                                <img src="assets/imgs/escudos-clubes/Palmeiras.png" width="120px" alt="">
+                            <!-- <div class="time" id="div_camaroes" onclick="camaroes()">
+                                <img class="estrela_off" id="estrela_off_camaroes" src="assets/imgs/star.png" width="25px"alt="estrela">
+                                <img class="estrela_on" id="estrela_active_camaroes" src="assets/imgs/star-active.png" width="25px"alt="estrela">
+                                <img src="assets/imgs/Selecoes/Camarões.png" width="80px" alt="">
+                                <span>Camarões</span>
+                            </div> -->
+
+                            <div class="time" id="div_canada" onclick="canada()">
+                                <img class="estrela_off" id="estrela_off_canada" src="assets/imgs/star.png" width="25px"alt="estrela">
+                                <img class="estrela_on" id="estrela_active_canada" src="assets/imgs/star-active.png" width="25px"alt="estrela">
+                                <img src="assets/imgs/Selecoes/canada.png" width="80px" alt="">
+                                <span>Canadá</span>
                             </div>
 
-                            <div class="time" id="div_athletico" onclick="athletico()">
-                                <img src="assets/imgs/escudos-clubes/Athletico Paranaense.png" width="120px" alt="">
+                            <div class="time" id="div_coreiadosul" onclick="coreiadosul()">
+                                <img class="estrela_off" id="estrela_off_coreiadosul" src="assets/imgs/star.png" width="25px"alt="estrela">
+                                <img class="estrela_on" id="estrela_active_coreiadosul" src="assets/imgs/star-active.png" width="25px"alt="estrela">
+                                <img src="assets/imgs/Selecoes/CoreiadoSul.png" width="80px" alt="">
+                                <span>Coreia do Sul</span>
                             </div>
 
-                            <div class="time" id="div_atleticogo" onclick="atleticogo()">
-                                <img src="assets/imgs/escudos-clubes/Atlético Goianiense HD.png" width="120px" alt="">
+                            <!-- <div class="time" id="div_costarica" onclick="costarica()">
+                                <img class="estrela_off" id="estrela_off_costarica" src="assets/imgs/star.png" width="25px"alt="estrela">
+                                <img class="estrela_on" id="estrela_active_costarica" src="assets/imgs/star-active.png" width="25px"alt="estrela">
+                                <img src="assets/imgs/Selecoes/CostaRica.png" width="80px" alt="">
+                                <span>Costa Rica</span>
+                            </div> -->
+
+                            <div class="time" id="div_inglaterra" onclick="inglaterra()">
+                                <img class="estrela_off" id="estrela_off_inglaterra" src="assets/imgs/star.png" width="25px"alt="estrela">
+                                <img class="estrela_on" id="estrela_active_inglaterra" src="assets/imgs/star-active.png" width="25px"alt="estrela">
+                                <img src="assets/imgs/Selecoes/Inglaterra.png" width="80px" alt="">
+                                <span>Inglaterra</span>
                             </div>
 
-                            <div class="time" id="div_ceara" onclick="ceara()">
-                                <img src="assets/imgs/escudos-clubes/Ceará.png" width="120px" alt="">
+                            <div class="time" id="div_iran" onclick="iran()">
+                                <img class="estrela_off" id="estrela_off_iran" src="assets/imgs/star.png" width="25px"alt="estrela">
+                                <img class="estrela_on" id="estrela_active_iran" src="assets/imgs/star-active.png" width="25px"alt="estrela">
+                                <img src="assets/imgs/Selecoes/iran.png" width="80px" alt="">
+                                <span>Irã</span>
+                            </div>
+
+                            <div class="time" id="div_japao" onclick="japao()">
+                                <img class="estrela_off" id="estrela_off_japao" src="assets/imgs/star.png" width="25px"alt="estrela">
+                                <img class="estrela_on" id="estrela_active_japao" src="assets/imgs/star-active.png" width="25px"alt="estrela">
+                                <img src="assets/imgs/Selecoes/japao.png" width="80px" alt="">
+                                <span>Japão</span>
+                            </div>
+
+                            <div class="time" id="div_croacia" onclick="croacia()">
+                                <img class="estrela_off" id="estrela_off_croacia" src="assets/imgs/star.png" width="25px"alt="estrela">
+                                <img class="estrela_on" id="estrela_active_croacia" src="assets/imgs/star-active.png" width="25px"alt="estrela">
+                                <img src="assets/imgs/Selecoes/Croacia.png" width="80px" alt="">
+                                <span>Croácia</span>
                             </div>
                         </div>
 
                         <div class="colunas">
-                            <div class="time" id="div_bragantino">
-                                <img src="assets/imgs/escudos-clubes/Red Bull Bragantino.png" width="120px" alt="">
-                                <div class="barra-botao">
-                                    <button onclick="bragantino()">Selecionar</button>
-                                </div>
+
+                            <div class="time" id="div_dinamarca" onclick="dinamarca()">
+                                <img class="estrela_off" id="estrela_off_dinamarca" src="assets/imgs/star.png" width="25px"alt="estrela">
+                                <img class="estrela_on" id="estrela_active_dinamarca" src="assets/imgs/star-active.png" width="25px"alt="estrela">
+                                <img src="assets/imgs/Selecoes/dinamarca.png" width="80px" alt="">
+                                <span>Dinamarca</span>
                             </div>
 
-                            <div class="time" id="div_coritiba" onclick="coritiba()">
-                                <img src="assets/imgs/escudos-clubes/Coritiba.png" width="120px" alt="">
+                            <div class="time" id="div_equador" onclick="equador()">
+                                <img class="estrela_off" id="estrela_off_equador" src="assets/imgs/star.png" width="25px"alt="estrela">
+                                <img class="estrela_on" id="estrela_active_equador" src="assets/imgs/star-active.png" width="25px"alt="estrela">
+                                <img src="assets/imgs/Selecoes/Equador.png" width="80px" alt="">
+                                <span>Equador</span>
                             </div>
 
-                            <div class="time" id="div_internacional" onclick="internacional()">
-                                <img src="assets/imgs/escudos-clubes/Internacional.png" width="120px" alt="">
+                            <div class="time" id="div_espanha" onclick="espanha()">
+                                <img class="estrela_off" id="estrela_off_espanha" src="assets/imgs/star.png" width="25px"alt="estrela">
+                                <img class="estrela_on" id="estrela_active_espanha" src="assets/imgs/star-active.png" width="25px"alt="estrela">
+                                <img src="assets/imgs/Selecoes/Espanha.png" width="80px" alt="">
+                                <span>Espanha</span>
                             </div>
 
-                            <div class="time" id="div_cuiaba" onclick="cuiaba()">
-                                <img src="assets/imgs/escudos-clubes/Cuiabá.png" width="120px" alt="">
+                            <div class="time" id="div_franca" onclick="franca()">
+                                <img class="estrela_off" id="estrela_off_franca" src="assets/imgs/star.png" width="25px"alt="estrela">
+                                <img class="estrela_on" id="estrela_active_franca" src="assets/imgs/star-active.png" width="25px"alt="estrela">
+                                <img src="assets/imgs/Selecoes/França.png" width="80px" alt="">
+                                <span>França</span>
                             </div>
 
-                            <div class="time" id="div_fortaleza" onclick="fortaleza()">
-                                <img src="assets/imgs/escudos-clubes/Fortaleza.png" width="120px" alt="">
+                            <div class="time" id="div_marrocos" onclick="marrocos()">
+                                <img class="estrela_off" id="estrela_off_marrocos" src="assets/imgs/star.png" width="25px"alt="estrela">
+                                <img class="estrela_on" id="estrela_active_marrocos" src="assets/imgs/star-active.png" width="25px"alt="estrela">
+                                <img src="assets/imgs/Selecoes/Marrocos.png" width="80px" alt="">
+                                <span>Marrocos</span>
+                            </div>
+
+                            <div class="time" id="div_mexico" onclick="mexico()">
+                                <img class="estrela_off" id="estrela_off_mexico" src="assets/imgs/star.png" width="25px"alt="estrela">
+                                <img class="estrela_on" id="estrela_active_mexico" src="assets/imgs/star-active.png" width="25px"alt="estrela">
+                                <img src="assets/imgs/Selecoes/Mexico.png" width="80px" alt="">
+                                <span>México</span>
+                            </div>
+
+                            <div class="time" id="div_polonia" onclick="polonia()">
+                                <img class="estrela_off" id="estrela_off_polonia" src="assets/imgs/star.png" width="25px"alt="estrela">
+                                <img class="estrela_on" id="estrela_active_polonia" src="assets/imgs/star-active.png" width="25px"alt="estrela">
+                                <img src="assets/imgs/Selecoes/Polonia.png" width="80px" alt="">
+                                <span>Polônia</span>
+                            </div>
+                        </div>
+
+                        <div class="colunas">
+                            <div class="time" id="div_portugal" onclick="portugal()">
+                                <img class="estrela_off" id="estrela_off_portugal" src="assets/imgs/star.png" width="25px"alt="estrela">
+                                <img class="estrela_on" id="estrela_active_portugal" src="assets/imgs/star-active.png" width="25px"alt="estrela">
+                                <img src="assets/imgs/Selecoes/portugal.png" width="80px" alt="">
+                                <span>Portugal</span>
+                            </div>
+
+                            <!-- <div class="time" id="div_qatar" onclick="qatar()">
+                                <img class="estrela_off" id="estrela_off_qatar" src="assets/imgs/star.png" width="25px"alt="estrela">
+                                <img class="estrela_on" id="estrela_active_qatar" src="assets/imgs/star-active.png" width="25px"alt="estrela">
+                                <img src="assets/imgs/Selecoes/qatar.png" width="80px" alt="">
+                                <span>Qatar</span>
+                            </div> -->
+
+                            <div class="time" id="div_senegal" onclick="senegal()">
+                                <img class="estrela_off" id="estrela_off_senegal" src="assets/imgs/star.png" width="25px"alt="estrela">
+                                <img class="estrela_on" id="estrela_active_senegal" src="assets/imgs/star-active.png" width="25px"alt="estrela">
+                                <img src="assets/imgs/Selecoes/Senegal.png" width="80px" alt="">
+                                <span>Senegal</span>
+                            </div>
+
+                            <div class="time" id="div_servia" onclick="servia()">
+                                <img class="estrela_off" id="estrela_off_servia" src="assets/imgs/star.png" width="25px"alt="estrela">
+                                <img class="estrela_on" id="estrela_active_servia" src="assets/imgs/star-active.png" width="25px"alt="estrela">
+                                <img src="assets/imgs/Selecoes/serbia.png" width="80px" alt="">
+                                <span>Sérvia</span>
+                            </div>
+
+                            <div class="time" id="div_suica" onclick="suica()">
+                                <img class="estrela_off" id="estrela_off_suica" src="assets/imgs/star.png" width="25px"alt="estrela">
+                                <img class="estrela_on" id="estrela_active_suica" src="assets/imgs/star-active.png" width="25px"alt="estrela">
+                                <img src="assets/imgs/Selecoes/switzerland.png" width="80px" alt="">
+                                <span>Suiça</span>
+                            </div>
+
+                            <div class="time" id="div_tunisia" onclick="tunisia()">
+                                <img class="estrela_off" id="estrela_off_tunisia" src="assets/imgs/star.png" width="25px"alt="estrela">
+                                <img class="estrela_on" id="estrela_active_tunisia" src="assets/imgs/star-active.png" width="25px"alt="estrela">
+                                <img src="assets/imgs/Selecoes/tunisia.png" width="80px" alt="">
+                                <span>Tunísia</span>
+                            </div>
+
+                            <div class="time" id="div_uruguai" onclick="uruguai()">
+                                <img class="estrela_off" id="estrela_off_uruguai" src="assets/imgs/star.png" width="25px"alt="estrela">
+                                <img class="estrela_on" id="estrela_active_uruguai" src="assets/imgs/star-active.png" width="25px"alt="estrela">
+                                <img src="assets/imgs/Selecoes/Uruguai.png" width="80px" alt="">
+                                <span>Uruguai</span>
+                            </div>
+
+                            <div class="time" id="div_eua" onclick="eua()">
+                                <img class="estrela_off" id="estrela_off_eua" src="assets/imgs/star.png" width="25px"alt="estrela">
+                                <img class="estrela_on" id="estrela_active_eua" src="assets/imgs/star-active.png" width="25px"alt="estrela">
+                                <img src="assets/imgs/Selecoes/USA.png" width="80px" alt="">
+                                <span>Estados Unidos</span>
                             </div>
                         </div>
                         <div class="continuar">
@@ -135,183 +299,428 @@
 
 </html>
 
-<script defer>
+<script>
 
 
 var times_favoritos = []
-function saopaulo(){
+function arabia(){
     if (times_favoritos.indexOf("1") != -1) {
         alert("Esse time já foi selecionado")
     }
     else{
         times_favoritos.push("1")
-        div_saopaulo.style.border = '4px solid rgb(140, 19, 6)'
+        div_arabia.style.border = '4px solid rgb(140, 19, 6)'
+        estrela_off_arabia.style.display = 'none'
+        estrela_active_arabia.style.display = 'block'
     }
 }
-function corinthians(){
+function argentina(){
     if (times_favoritos.indexOf("2") != -1) {
         alert("Esse time já foi selecionado")
     }
     else{
     times_favoritos.push("2")
-    div_corinthians.style.border = '4px solid rgb(140, 19, 6)'
+    div_argentina.style.border = '4px solid rgb(140, 19, 6)'
+    estrela_off_argentina.style.display = 'none'
+    estrela_active_argentina.style.display = 'block'
     }
 }
-function flamengo(){
+function gales(){
     if (times_favoritos.indexOf("3") != -1) {
         alert("Esse time já foi selecionado")
     }
     else{
     times_favoritos.push("3")
-    div_flamengo.style.border = '4px solid rgb(140, 19, 6)'
+    div_gales.style.border = '4px solid rgb(140, 19, 6)'
+    estrela_off_gales.style.display = 'none'
+    estrela_active_gales.style.display = 'block'
     }
 }
-function fluminense() {
+// function australia() {
+//     if (times_favoritos.indexOf("4") != -1) {
+//         alert("Esse time já foi selecionado")
+//     }
+//     else{
+//     times_favoritos.push("4")
+//     div_australia.style.border = '4px solid rgb(140, 19, 6)'
+//     estrela_off_australia.style.display = 'none'
+//     estrela_active_australia.style.display = 'block'
+//     }
+// }
+function belgica() {
     if (times_favoritos.indexOf("4") != -1) {
         alert("Esse time já foi selecionado")
     }
     else{
     times_favoritos.push("4")
-    div_fluminense.style.border = '4px solid rgb(140, 19, 6)'
+    div_belgica.style.border = '4px solid rgb(140, 19, 6)'
+    estrela_off_belgica.style.display = 'none'
+    estrela_active_belgica.style.display = 'block'
     }
 }
-function botafogo() {
+function alemanha() {
     if (times_favoritos.indexOf("5") != -1) {
         alert("Esse time já foi selecionado")
     }
     else{
     times_favoritos.push("5")
-    div_botafogo.style.border = '4px solid rgb(140, 19, 6)'
+    div_alemanha.style.border = '4px solid rgb(140, 19, 6)'
+    estrela_off_alemanha.style.display = 'none'
+    estrela_active_alemanha.style.display = 'block'
     }
 }
-function santos() {
+function ghana(){
     if (times_favoritos.indexOf("6") != -1) {
         alert("Esse time já foi selecionado")
     }
     else{
     times_favoritos.push("6")
-    div_santos.style.border = '4px solid rgb(140, 19, 6)'
+    div_ghana.style.border = '4px solid rgb(140, 19, 6)'
+    estrela_off_ghana.style.display = 'none'
+    estrela_active_ghana.style.display = 'block'
     }
 }
-function palmeiras() {
+
+function holanda(){
     if (times_favoritos.indexOf("7") != -1) {
         alert("Esse time já foi selecionado")
     }
     else{
     times_favoritos.push("7")
-    div_palmeiras.style.border = '4px solid rgb(140, 19, 6)'
+    div_holanda.style.border = '4px solid rgb(140, 19, 6)'
+    estrela_off_holanda.style.display = 'none'
+    estrela_active_holanda.style.display = 'block'
     }
 }
-function athletico() {
+
+function brasil() {
     if (times_favoritos.indexOf("8") != -1) {
         alert("Esse time já foi selecionado")
     }
     else{
     times_favoritos.push("8")
-    div_athletico.style.border = '4px solid rgb(140, 19, 6)'
+    div_brasil.style.border = '4px solid rgb(140, 19, 6)'
+    estrela_off_brasil.style.display = 'none'
+    estrela_active_brasil.style.display = 'block'
     }
 }
-function atleticogo() {
+// function camaroes() {
+//     if (times_favoritos.indexOf("10") != -1) {
+//         alert("Esse time já foi selecionado")
+//     }
+//     else{
+//     times_favoritos.push("10")
+//     div_camaroes.style.border = '4px solid rgb(140, 19, 6)'
+//     estrela_off_camaroes.style.display = 'none'
+//     estrela_active_camaroes.style.display = 'block'
+//     }
+// }
+function canada() {
     if (times_favoritos.indexOf("9") != -1) {
         alert("Esse time já foi selecionado")
     }
     else{
     times_favoritos.push("9")
-    div_atleticogo.style.border = '4px solid rgb(140, 19, 6)'
+    div_canada.style.border = '4px solid rgb(140, 19, 6)'
+    estrela_off_canada.style.display = 'none'
+    estrela_active_canada.style.display = 'block'
     }
 }
-function ceara() {
+function coreiadosul() {
     if (times_favoritos.indexOf("10") != -1) {
         alert("Esse time já foi selecionado")
     }
     else{
     times_favoritos.push("10")
-    div_ceara.style.border = '4px solid rgb(140, 19, 6)'
+    div_coreiadosul.style.border = '4px solid rgb(140, 19, 6)'
+    estrela_off_coreiadosul.style.display = 'none'
+    estrela_active_coreiadosul.style.display = 'block'
     }
 }
-function bragantino() {
+// function costarica() {
+//     if (times_favoritos.indexOf("13") != -1) {
+//         alert("Esse time já foi selecionado")
+//     }
+//     else{
+//     times_favoritos.push("13")
+//     div_costarica.style.border = '4px solid rgb(140, 19, 6)'
+//     estrela_off_costarica.style.display = 'none'
+//     estrela_active_costarica.style.display = 'block'
+//     }
+// }
+
+function inglaterra() {
     if (times_favoritos.indexOf("11") != -1) {
         alert("Esse time já foi selecionado")
     }
     else{
     times_favoritos.push("11")
-    div_bragantino.style.border = '4px solid rgb(140, 19, 6)'
+    div_inglaterra.style.border = '4px solid rgb(140, 19, 6)'
+    estrela_off_inglaterra.style.display = 'none'
+    estrela_active_inglaterra.style.display = 'block'
     }
 }
-function coritiba() {
+
+function iran() {
     if (times_favoritos.indexOf("12") != -1) {
         alert("Esse time já foi selecionado")
     }
     else{
     times_favoritos.push("12")
-    div_coritiba.style.border = '4px solid rgb(140, 19, 6)'
+    div_iran.style.border = '4px solid rgb(140, 19, 6)'
+    estrela_off_iran.style.display = 'none'
+    estrela_active_iran.style.display = 'block'
     }
 }
-function internacional() {
-     if (times_favoritos.indexOf("13") != -1) {
+
+function japao() {
+    if (times_favoritos.indexOf("13") != -1) {
         alert("Esse time já foi selecionado")
     }
     else{
     times_favoritos.push("13")
-    div_internacional.style.border = '4px solid rgb(140, 19, 6)'
+    div_japao.style.border = '4px solid rgb(140, 19, 6)'
+    estrela_off_japao.style.display = 'none'
+    estrela_active_japao.style.display = 'block'
     }
 }
-function cuiaba() {
+
+function croacia() {
     if (times_favoritos.indexOf("14") != -1) {
         alert("Esse time já foi selecionado")
     }
     else{
     times_favoritos.push("14")
-    div_cuiaba.style.border = '4px solid rgb(140, 19, 6)'
+    div_croacia.style.border = '4px solid rgb(140, 19, 6)'
+    estrela_off_croacia.style.display = 'none'
+    estrela_active_croacia.style.display = 'block'
     }
 }
-function fortaleza() {
+function dinamarca() {
     if (times_favoritos.indexOf("15") != -1) {
         alert("Esse time já foi selecionado")
     }
     else{
     times_favoritos.push("15")
-    div_fortaleza.style.border = '4px solid rgb(140, 19, 6)'
+    div_dinamarca.style.border = '4px solid rgb(140, 19, 6)'
+    estrela_off_dinamarca.style.display = 'none'
+    estrela_active_dinamarca.style.display = 'block'
+    }
+}
+function equador() {
+     if (times_favoritos.indexOf("16") != -1) {
+        alert("Esse time já foi selecionado")
+    }
+    else{
+    times_favoritos.push("16")
+    div_equador.style.border = '4px solid rgb(140, 19, 6)'
+    estrela_off_equador.style.display = 'none'
+    estrela_active_equador.style.display = 'block'
+    }
+}
+function espanha() {
+    if (times_favoritos.indexOf("17") != -1) {
+        alert("Esse time já foi selecionado")
+    }
+    else{
+    times_favoritos.push("17")
+    div_espanha.style.border = '4px solid rgb(140, 19, 6)'
+    estrela_off_espanha.style.display = 'none'
+    estrela_active_espanha.style.display = 'block'
     }
 }
 
-     
+function franca() {
+    if (times_favoritos.indexOf("18") != -1) {
+        alert("Esse time já foi selecionado")
+    }
+    else{
+    times_favoritos.push("18")
+    div_franca.style.border = '4px solid rgb(140, 19, 6)'
+    estrela_off_franca.style.display = 'none'
+    estrela_active_franca.style.display = 'block'
+    }
+}
+
+function marrocos() {
+    if (times_favoritos.indexOf("19") != -1) {
+        alert("Esse time já foi selecionado")
+    }
+    else{
+    times_favoritos.push("19")
+    div_marrocos.style.border = '4px solid rgb(140, 19, 6)'
+    estrela_off_marrocos.style.display = 'none'
+    estrela_active_marrocos.style.display = 'block'
+    }
+}
+
+function mexico() {
+    if (times_favoritos.indexOf("20") != -1) {
+        alert("Esse time já foi selecionado")
+    }
+    else{
+    times_favoritos.push("20")
+    div_mexico.style.border = '4px solid rgb(140, 19, 6)'
+    estrela_off_mexico.style.display = 'none'
+    estrela_active_mexico.style.display = 'block'
+    }
+}
+
+function polonia() {
+    if (times_favoritos.indexOf("21") != -1) {
+        alert("Esse time já foi selecionado")
+    }
+    else{
+    times_favoritos.push("21")
+    div_polonia.style.border = '4px solid rgb(140, 19, 6)'
+    estrela_off_polonia.style.display = 'none'
+    estrela_active_polonia.style.display = 'block'
+    }
+}
+
+function portugal() {
+    if (times_favoritos.indexOf("22") != -1) {
+        alert("Esse time já foi selecionado")
+    }
+    else{
+    times_favoritos.push("22")
+    div_portugal.style.border = '4px solid rgb(140, 19, 6)'
+    estrela_off_portugal.style.display = 'none'
+    estrela_active_portugal.style.display = 'block'
+    }
+}  
+
+// function qatar() {
+//     if (times_favoritos.indexOf("26") != -1) {
+//         alert("Esse time já foi selecionado")
+//     }
+//     else{
+//     times_favoritos.push("26")
+//     div_qatar.style.border = '4px solid rgb(140, 19, 6)'
+//     estrela_off_qatar.style.display = 'none'
+//     estrela_active_qatar.style.display = 'block'
+//     }
+// } 
+
+function senegal() {
+    if (times_favoritos.indexOf("23") != -1) {
+        alert("Esse time já foi selecionado")
+    }
+    else{
+    times_favoritos.push("23")
+    div_senegal.style.border = '4px solid rgb(140, 19, 6)'
+    estrela_off_senegal.style.display = 'none'
+    estrela_active_senegal.style.display = 'block'
+    }
+} 
+
+function servia() {
+    if (times_favoritos.indexOf("24") != -1) {
+        alert("Esse time já foi selecionado")
+    }
+    else{
+    times_favoritos.push("24")
+    div_servia.style.border = '4px solid rgb(140, 19, 6)'
+    estrela_off_servia.style.display = 'none'
+    estrela_active_servia.style.display = 'block'
+    }
+} 
+
+function suica() {
+    if (times_favoritos.indexOf("25") != -1) {
+        alert("Esse time já foi selecionado")
+    }
+    else{
+    times_favoritos.push("25")
+    div_suica.style.border = '4px solid rgb(140, 19, 6)'
+    estrela_off_suica.style.display = 'none'
+    estrela_active_suica.style.display = 'block'
+    }
+}
+
+function tunisia() {
+    if (times_favoritos.indexOf("26") != -1) {
+        alert("Esse time já foi selecionado")
+    }
+    else{
+    times_favoritos.push("26")
+    div_tunisia.style.border = '4px solid rgb(140, 19, 6)'
+    estrela_off_tunisia.style.display = 'none'
+    estrela_active_tunisia.style.display = 'block'
+    }
+}
+
+function uruguai(){
+    if (times_favoritos.indexOf("27") != -1) {
+        alert("Esse time já foi selecionado")
+    }
+    else{
+    times_favoritos.push("27")
+    div_uruguai.style.border = '4px solid rgb(140, 19, 6)'
+    estrela_off_uruguai.style.display = 'none'
+    estrela_active_uruguai.style.display = 'block'
+    }
+}
+
+function eua(){
+    if (times_favoritos.indexOf("28") != -1) {
+        alert("Esse time já foi selecionado")
+    }
+    else{
+    times_favoritos.push("28")
+    div_eua.style.border = '4px solid rgb(140, 19, 6)'
+    estrela_off_eua.style.display = 'none'
+    estrela_active_eua.style.display = 'block'
+    }
+}
 
     function continuar(){
+        var idUsuario = sessionStorage.ID_USUARIO
+        var selecao = 0
 
-        fetch("/usuarios/cadastrarTimes", {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json"
-                },
-                body: JSON.stringify({
-                    // crie um atributo que recebe o valor recuperado aqui
-                    // Agora vá para o arquivo routes/usuario.js
-                    timesFavoritosServer: times_favoritos
-                })
-            }).then(function (resposta) {
-    
-                console.log("resposta: ", resposta);
-    
-                if (resposta.ok) {
-                    cardErro.style.display = "block";
-    
-                    // mensagem_erro.innerHTML = "Cadastro realizado com sucesso! Redirecionando para tela de Login...";
-    
-                    setTimeout(() => {
-                        window.location = "login.html";
-                    }, "2000")
-                    
-                    limparFormulario();
+        for (let index = 0; index < times_favoritos.length; index++) {
+                var selecao = times_favoritos[index]
+            
+                console.log(`\n entrando no for e pegando a posição número${index}`)
+
+                fetch("/usuarios/cadastrarTimes", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json"
+                    },
+                    body: JSON.stringify({
+                        // crie um atributo que recebe o valor recuperado aqui
+                        // Agora vá para o arquivo routes/usuario.js
+                        selecaoServer: selecao,
+                        idUsuarioServer: idUsuario
+                    })
+                }).then(function (resposta) {
+        
+                    console.log("resposta: ", resposta);
+        
+                    if (resposta.ok) {
+                        cardErro.style.display = "block";
+        
+                        // mensagem_erro.innerHTML = "Cadastro realizado com sucesso! Redirecionando para tela de Login...";
+        
+                        setTimeout(() => {
+                            window.location = "stats.html";
+                        }, "2000")
+                        
+                        limparFormulario();
+                        finalizarAguardar();
+                    } else {
+                        throw ("Houve um erro ao tentar realizar o cadastro!");
+                    }
+                }).catch(function (resposta) {
+                    console.log(`#ERRO: ${resposta}`);
                     finalizarAguardar();
-                } else {
-                    throw ("Houve um erro ao tentar realizar o cadastro!");
-                }
-            }).catch(function (resposta) {
-                console.log(`#ERRO: ${resposta}`);
-                finalizarAguardar();
-            });
-    
+                });
+        
+                
+            }
+            window.location = "stats.html"
             return false;
+    
     }
 </script>
