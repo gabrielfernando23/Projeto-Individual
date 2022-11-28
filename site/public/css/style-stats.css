@@ -23,6 +23,7 @@
     margin-left: 100px;
     border-radius: 20px;
     margin-bottom: 50px;
+    margin-bottom: 100px;
 }
 
 .quadro .menu{
@@ -74,4 +75,81 @@
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     background-color: gainsboro;
+}
+
+/* Fase de Grupos */
+
+#div_fase_grupos{
+    overflow: scroll;
+    overflow-y: hidden;
+} 
+
+#div_fase_grupos .container{
+    width:2000px;
+    height: 715px;
+    /* padding-bottom: 100px; */
+}
+
+#div_fase_grupos table{
+    width: 450px;
+    height: 200px;
+    background-color: black;
+}
+
+#div_fase_grupos table #nome_selecao{
+    width: 400px
+}
+
+
+#div_fase_grupos table td{
+height: 50px;
+width: 50px;
+background-color: white;
+color: black;
+text-align: center;
+font-weight: 500;
+}
+
+#div_fase_grupos table .cabecalho{
+    height: 50px;
+    width: 50px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    }
+
+#div_fase_grupos .colunas{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+#div_fase_grupos .classificados{
+    background-color: #15e30e;
+}
+
+#div_fase_grupos .legenda{
+    display: flex;
+    height: 70px;
+    width: 700px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin-bottom: 600px;
+    background-color: white;
+}
+
+#div_fase_grupos .legenda span{
+    margin-left: 15px;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+#div_fase_grupos .legenda .bolinha{
+    background-color:#15e30e;
+    height:50px;
+    width: 50px;
+    border-radius: 50px;
+    border: 4px solid black;
 }
