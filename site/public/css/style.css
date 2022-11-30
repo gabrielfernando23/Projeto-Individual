@@ -73,7 +73,7 @@ body {
 
 .banner {
   display: flex;
-  height: 2300px;
+  height: 3400px;
   width: 100%;
   padding: 40px 0;
   background-image: url("../assets/imgs/background-blur.png");
@@ -82,7 +82,7 @@ body {
 
 .banner .container {
   display: flex;
-  height: 2260px;
+  height: 3400px;
   width: 100%;
   font-size: 36px;
   flex-direction: column;
@@ -258,6 +258,106 @@ body {
 
 .tamanho-conteudo { 
   height: fit-content !important;
+}
+/* Carrosel */
+
+.gallery{
+  display: flex;
+  width: 1000px;
+  height: 700px;
+  margin-top: 150px;
+  margin-left: 250px;
+  border: 6px solid black;
+  overflow: hidden;
+}
+
+.gallery:hover{
+  box-shadow: 7px 7px 15px black;
+}
+
+.gallery .carrossel ol{
+  width: 4000px;
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.barra-slide{
+  display: flex;
+  height: 35px;
+  width: 200px;
+  background-color: white;
+  position: absolute;
+  border: 3px solid black;
+  border-radius: 40px;
+  margin-top: 450px;
+  margin-left: 410px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.barra-slide:hover{
+  transition: .5s;
+  box-shadow: 4px 4px 15px black;
+}
+
+
+.barra-slide .botoes{
+  background-color: white;
+  height: 15px;
+  width:15px;
+  border-radius: 20px;
+  border: 5px solid black;
+}
+
+.barra-slide #botaoCR7{
+  background-color: black;
+}
+
+.barra-slide .botoes:hover{
+cursor: pointer;
+}
+
+.carrossel #cristiano{
+  background-image: url(../assets/imgs/ic-cristiano-ronaldo-bg.jpg);
+  background-position: cover;
+  display: flex;
+  width: 1000px;
+  height: 700px;
+}
+
+.carrossel .divs-craques span{
+  font-size: 30px;
+  width:1000px;
+  height: 700px;
+  padding:100px 100px;
+  overflow: hidden;
+  color: white;
+  background-color: rgb(0, 0, 0, 0.3);
+}
+
+.carrossel ol #mbappe{
+  background-image: url("../assets/imgs/ic-mbappe-bg.jpg");
+  display: flex;
+  background-position: cover;
+  width: 1000px;
+  height: 700px;
+}
+
+.carrossel ol #neymar{
+  background-image: url("../assets/imgs/ic-neymar-bg.jpg");
+  background-position: cover;
+  display: flex;
+  width: 1000px;
+  height: 700px;
+}
+
+.carrossel ol #richarlison{
+  background-image: url("../assets/imgs/ic-richarlison-bg.jpg");
+  background-position: cover;
+  display: flex;
+  width: 1000px;
+  height: 700px;
 }
 
 /* Sobre mim */

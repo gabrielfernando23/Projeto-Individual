@@ -129,6 +129,26 @@
                         </div>
                     </div>
 
+                
+                    <div class="gallery">
+                        <div class="barra-slide">
+                           <div class="botoes" id="botaoCR7"  onclick="primeiro()"></div>
+                           <div class="botoes" id="botaombappe" onclick="segundo()"></div>
+                           <div class="botoes" id="botaoNeymar" onclick="terceiro()"></div>
+                           <div class="botoes" id="botaoRicharlison" onclick="quarto()"></div>
+                           <!-- <div class="botoes" onclick=""></div> -->
+                        </div>
+                        <div class="carrossel">
+                            <ol id="slider">
+                                <div class="divs-craques" id="cristiano"><span><h2>Cristiano Ronaldo</h2>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde dolorum, natus maxime illum quam, distinctio nobis itaque voluptate inventore doloribus temporibus. Debitis error eius praesentium dolores vitae aperiam unde temporibus.</span>
+                                </div>
+                                <div class="divs-craques" id="mbappe"><span><h2>Mbappe</h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, delectus, neque reiciendis tempore voluptas repudiandae quos a asperiores vitae doloremque saepe ea quas debitis numquam necessitatibus, quisquam atque nostrum deleniti?</span></div>
+                                <div class="divs-craques" id="neymar"><span><h2>Neymar</h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum eligendi debitis dicta, quis voluptatibus earum unde, minus ratione, dolorem quod eos esse laboriosam est? Distinctio iste maiores quisquam assumenda pariatur.</span></div>
+                                <div class="divs-craques" id="richarlison"><span><h2>Richarlison</h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque voluptatem hic obcaecati impedit sint fugit amet non, quod veniam ab, repellat nam ex. Blanditiis autem nulla cumque cum earum nihil.</span></div>
+                            </ol>
+                        </div>
+                    </div>
+
                 <div class="sobre">
 
                     <div class="titulo">
@@ -186,7 +206,7 @@
                     </div>
 
                     <div class="fotos">
-                        <img src="" alt="">
+                        <img src="./assets/imgs/gabrielzinho-corinthians.jpg" width="670px" alt="">
 
                         <img src="" alt="">
                     </div>
@@ -208,5 +228,40 @@
     </div>
     <!--footer fim-->
 </body>
-
 </html>
+
+<script>
+    function primeiro() {
+        slider.style.marginLeft = "0px"
+        slider.style.transition = "2s"
+        botaoCR7.style.backgroundColor = "black"
+        botaombappe.style.backgroundColor = "white"
+        botaoNeymar.style.backgroundColor = "white"
+        botaoRicharlison.style.backgroundColor = "white"
+    }
+    function segundo() {
+        slider.style.marginLeft = "-1000px"
+        slider.style.transition = "2s"
+        botaombappe.style.backgroundColor = "black"
+        botaoCR7.style.backgroundColor = "white"
+        botaoNeymar.style.backgroundColor = "white"
+        botaoRicharlison.style.backgroundColor = "white"
+    }
+    function terceiro() {
+        slider.style.marginLeft = "-2000px"
+        slider.style.transition = "2s"
+        botaoNeymar.style.backgroundColor = "black"
+        botaoRicharlison.style.backgroundColor = "white"
+        botaoCR7.style.backgroundColor = "white"
+        botaombappe.style.backgroundColor = "white"
+
+    }
+    function quarto() {
+        slider.style.marginLeft = "-3000px"
+        slider.style.transition = "2s"
+        botaoRicharlison.style.backgroundColor = "black"
+        botaombappe.style.backgroundColor = "white"
+        botaoNeymar.style.backgroundColor = "white"
+        botaoCR7.style.backgroundColor = "white"
+    }
+</script>

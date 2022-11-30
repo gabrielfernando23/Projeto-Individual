@@ -27,12 +27,12 @@
 }
 
 .quadro .menu{
-    border: solid 2px black;
+    /* border: solid 2px black; */
     height: 720px;
     width: 260px;
     border-bottom-left-radius: 20px;
     border-top-left-radius: 20px;
-    background-color: gainsboro;
+    background-color: black;
 }
 
 .barranav span{
@@ -52,13 +52,14 @@
 }
 .menu .barranav{
     display: flex;
-    border: 2px solid black;
+    border: 2px solid white;
     height: 80px;
-    width:255px;
+    width:259px;
     justify-content: center;
     align-items: center;
     /* border-radius: 15px; */
-    background-color: gainsboro;
+    background-color: black;
+    color: white;
 }
 
 .menu .barranav:hover, .menu .barranav span:hover{
@@ -87,7 +88,6 @@
 #div_fase_grupos .container{
     width:2000px;
     height: 715px;
-    /* padding-bottom: 100px; */
 }
 
 #div_fase_grupos table{
@@ -116,7 +116,12 @@ font-weight: 500;
     background-color: black;
     color: white;
     text-align: center;
-    }
+}
+
+#div_fase_grupos table:hover{
+    box-shadow: 6px 6px 10px black;
+    transition: .6s;
+}
 
 #div_fase_grupos .colunas{
     display: flex;
@@ -127,17 +132,22 @@ font-weight: 500;
 
 #div_fase_grupos .classificados{
     background-color: #15e30e;
+    font-weight: 700;
 }
 
 #div_fase_grupos .legenda{
     display: flex;
-    height: 70px;
-    width: 700px;
+    height: 100px;
+    width: 1040px;
     justify-content: center;
     align-items: center;
+    border-top-right-radius: 20px;
     position: absolute;
-    margin-bottom: 600px;
+    margin-bottom: 680px;
     background-color: white;
+    border-top: 3px solid black;
+    border-right: 3px solid black;
+    border-bottom: 5px solid black;
 }
 
 #div_fase_grupos .legenda span{
