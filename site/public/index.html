@@ -131,7 +131,7 @@
 
                 
                     <div class="gallery">
-                        <div class="barra-slide">
+                        <div class="barra-slide" id="barraCraques">
                            <div class="botoes" id="botaoCR7"  onclick="primeiro()"></div>
                            <div class="botoes" id="botaombappe" onclick="segundo()"></div>
                            <div class="botoes" id="botaoNeymar" onclick="terceiro()"></div>
@@ -148,11 +148,11 @@
                             </ol>
                         </div>
                     </div>
-
+                    <div id="degrade"></div>
                 <div class="sobre">
 
                     <div class="titulo">
-                        <h2>Impacto na minha vida</h2>
+                        <span>Impacto na minha vida</span>
                     </div>
 
                     <div class="conteudo">
@@ -206,7 +206,14 @@
                     </div>
 
                     <div class="fotos">
-                        <ol>
+                        <div class="barra-slide" id="barraminhasFotos">
+                            <div class="botoes" id="botaoPrimeiro"  onclick="primeiraFoto()"></div>
+                            <div class="botoes" id="botaoSegundo" onclick="segundaFoto()"></div>
+                            <div class="botoes" id="botaoTerceiro" onclick="terceiraFoto()"></div>
+                            <div class="botoes" id="" onclick=""></div>
+                             <div class="botoes" onclick=""></div></div>
+
+                        <ol id="sliderminhasFotos">
                             <div id="bebe" class="minhasFotos"></div>
                             <div id="taca-copa" class="minhasFotos"></div>
                             <div id="foto-copa" class="minhasFotos"></div>
@@ -265,5 +272,32 @@
         botaombappe.style.backgroundColor = "white"
         botaoNeymar.style.backgroundColor = "white"
         botaoCR7.style.backgroundColor = "white"
+    }
+
+
+    function primeiraFoto() {
+        sliderminhasFotos.style.marginLeft = "0px"
+        sliderminhasFotos.style.transition = "2s"
+        botaoPrimeiro.style.backgroundColor = "black"
+        botaoSegundo.style.backgroundColor = "white"
+        botaoTerceiro.style.backgroundColor = "white"
+        // botao.style.backgroundColor = "white"
+    }
+    function segundaFoto() {
+        sliderminhasFotos.style.marginLeft = "-700px"
+        sliderminhasFotos.style.transition = "2s"
+        botaoSegundo.style.backgroundColor = "black"
+        botaoPrimeiro.style.backgroundColor = "white"
+        botaoTerceiro.style.backgroundColor = "white"
+        // botaoRicharlison.style.backgroundColor = "white"
+    }
+    function terceiraFoto() {
+        sliderminhasFotos.style.marginLeft = "-1400px"
+        sliderminhasFotos.style.transition = "2s"
+        botaoTerceiro.style.backgroundColor = "black"
+        botaoPrimeiro.style.backgroundColor = "white"
+        botaoSegundo.backgroundColor = "white"
+        // botaombappe.style.backgroundColor = "white"
+
     }
 </script>

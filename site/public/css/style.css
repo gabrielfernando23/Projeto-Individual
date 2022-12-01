@@ -17,9 +17,7 @@ body {
   display: flex;
   height: 80px;
   width: 100%;
-  position: fixed;
   background-color: black;
-  border-bottom: solid 5px white;
 }
 
 .container {
@@ -290,10 +288,14 @@ body {
   position: absolute;
   border: 3px solid black;
   border-radius: 40px;
-  margin-top: 450px;
-  margin-left: 410px;
   justify-content: space-around;
   align-items: center;
+}
+
+.gallery #barraCraques{
+  margin-top: 450px;
+  margin-left: 410px;
+  
 }
 
 .barra-slide:hover{
@@ -370,6 +372,7 @@ cursor: pointer;
   margin-top: 50px;
   margin-left: 280px;
   margin-right: 50px;
+  overflow: hidden;
 }
 
 .fotos ol{
@@ -377,11 +380,44 @@ cursor: pointer;
   flex-direction:row;
   height: 480px;
   width: 2500px;
+  margin-left: 0px;
+}
+
+.fotos .setas{
+  display: flex;
+  width: 700px;
+  height: 480px;
+  justify-content: space-between;
+  overflow: hidden;
+  font-size: 100px;
+}
+
+
+.setas #esquerda, #direita{
+  display: flex;
+  justify-content: center;
+  align-items: cente/r;
+  height: 480px;
+  width: 80px;
+  background-color: black;
+
+}
+
+/* .setas #direita{
+  height: 480px;
+  width: 100px;
+  background-color: black;
+} */
+
+.fotos #barraminhasFotos{
+  margin-top: 400px;
+  margin-left: 250px;
+  position: absolute;
 }
 
 .fotos ol #bebe{
   background-image: url("../assets/imgs/gabrielzinho-corinthians.jpg");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   height: 480px;
   width: 700px;
@@ -392,16 +428,21 @@ cursor: pointer;
   /* background-image: url("../assets/imgs/"); */
   background-color: red;
   height: 480px;
-  width: 600px;
+  width: 700px;
 }
 
 .fotos ol #foto-copa{
   background-color: purple;
   height: 480px;
-  width: 600px;
+  width: 700px;
 }
 
-
+/* Degradê */
+body #degrade{
+  width: 100%;
+  height: 300px;
+  background-image: linear-gradient(transparent,black);
+}
 
 
 /* Sobre mim */
@@ -410,7 +451,7 @@ cursor: pointer;
   height: 2500px;
   width: 100%;
   color: white;
-  margin-top: 150px;
+  /* margin-top: 150px; */
   flex-direction: column;
   justify-content: center;
 }
@@ -418,6 +459,8 @@ cursor: pointer;
 .sobre .titulo{
   display: flex;
   justify-content: center;
+  font-size: 65px;
+  font-weight: 800;
 }
 
 .sobre .conteudo{
@@ -428,7 +471,7 @@ cursor: pointer;
 }
 
 .conteudo .futebol{
-  border: solid 2px white;
+  /* border: solid 2px white; */
   height: 600px;
   margin-left: 50px;
   margin-right: 25px;
@@ -436,8 +479,16 @@ cursor: pointer;
   width: 160%;
 }
 
+.conteudo .futebol h3{
+  font-size: 45px;
+}
+
+.conteudo .copa h3{
+  font-size: 45px;
+}
+
 .conteudo .copa{
-  border: solid 2px white;
+  /* border: solid 2px white; */
   height: 800px;
   margin-right: 50px;
   margin-left: 25px;
