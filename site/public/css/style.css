@@ -360,6 +360,50 @@ cursor: pointer;
   height: 700px;
 }
 
+/* Carrosel de Fotos minhas */
+.fotos{
+  display: flex;
+  flex-direction: row;
+  border: solid 5px white;
+  height: 480px;
+  width: 700px;
+  margin-top: 50px;
+  margin-left: 280px;
+  margin-right: 50px;
+}
+
+.fotos ol{
+  display: flex;
+  flex-direction:row;
+  height: 480px;
+  width: 2500px;
+}
+
+.fotos ol #bebe{
+  background-image: url("../assets/imgs/gabrielzinho-corinthians.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 480px;
+  width: 700px;
+  border: 2px solid white;
+}
+
+.fotos ol #taca-copa{
+  /* background-image: url("../assets/imgs/"); */
+  background-color: red;
+  height: 480px;
+  width: 600px;
+}
+
+.fotos ol #foto-copa{
+  background-color: purple;
+  height: 480px;
+  width: 600px;
+}
+
+
+
+
 /* Sobre mim */
 .container .sobre{
   background-color: black;
@@ -401,16 +445,6 @@ cursor: pointer;
   width: 160%;
 }
 
-.sobre .fotos{
-  display: flex;
-  flex-direction: row;
-  border: solid 2px white;
-  height: 500px;
-  width: 94%;
-  margin-top: 50px;
-  margin-left: 50px;
-  margin-right: 50px;
-}
 
 
 /* FOOTER */
