@@ -1,38 +1,40 @@
+.banner{
+  display: flex;
+  height: 720px;
+  padding: 40px 0;
+  background-image: url("../assets/imgs/background-blur.png");
+  background-size: cover;
+}
 
 .banner .container{
     display: flex;
     justify-content: right;
     align-items: center;
     flex-direction: row;
+    height: 720px;
 }
 
-.banner .container .card-cadastro {
+.banner .container .card-cadastro{
     display: flex;
     background-color: #e5e5e5;
-    height: 690px;
+    height: 720px;
     width: 400px;
     display: flex;
     justify-content: space-around;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 100px;
+    margin-bottom: 145px;
+    margin-top: 5px;
   }
 
   .container .esquerda{
     display: flex;
-    height: 685px;
+    height: 720px;
     width: 1150px;
     justify-content: center;
     align-items: center;
   }
 
-  .banner {
-    display: flex;
-    height: 760px;
-    padding: 40px 0;
-    background-image: url("../assets/imgs/background-blur.png");
-    background-size: cover;
-  }
 
   .esquerda .card-saudacao{
     display:flex;

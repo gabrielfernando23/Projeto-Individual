@@ -53,7 +53,7 @@ body {
   justify-content: space-between;
   list-style: none;
   color: white;
-  font-size: 20px;
+  font-size: 25px;
 }
 .header .container span{
   font-size: 40px;
@@ -71,7 +71,7 @@ body {
 
 .banner {
   display: flex;
-  height: 3400px;
+  height: 3000px;
   width: 100%;
   padding: 40px 0;
   background-image: url("../assets/imgs/background-blur.png");
@@ -80,7 +80,7 @@ body {
 
 .banner .container {
   display: flex;
-  height: 3400px;
+  height: 2930px;
   width: 100%;
   font-size: 36px;
   flex-direction: column;
@@ -93,7 +93,7 @@ body {
 
 .container .jogos{
   display: flex;
-  margin-top: 150px;
+  margin-top: 50px;
   background-color: white;
   border-radius: 15px;
   width: 610px;
@@ -262,8 +262,8 @@ body {
 .gallery{
   display: flex;
   width: 1000px;
-  height: 700px;
-  margin-top: 150px;
+  height: 800px;
+  margin-top: 50px;
   margin-left: 250px;
   border: 6px solid black;
   overflow: hidden;
@@ -271,6 +271,7 @@ body {
 
 .gallery:hover{
   box-shadow: 7px 7px 15px black;
+  transition: .4s;
 }
 
 .gallery .carrossel ol{
@@ -278,6 +279,7 @@ body {
   display:flex;
   flex-direction: row;
   justify-content: center;
+  overflow: hidden;
 }
 
 .barra-slide{
@@ -293,7 +295,7 @@ body {
 }
 
 .gallery #barraCraques{
-  margin-top: 450px;
+  margin-top: 470px;
   margin-left: 410px;
   
 }
@@ -328,15 +330,80 @@ cursor: pointer;
   height: 700px;
 }
 
-.carrossel .divs-craques span{
+.carrossel .divs-craques a{
+  text-decoration: none;
+  text-align: center;
+  width: 140px;
+  height: 50px;
+  padding: 10px 25px;
   font-size: 30px;
+  border-radius: 20px;
+  color: white;
+  font-weight: 700;
+  background-color: rgb(0, 0, 0, 0.8);
+}
+
+.carrossel .divs-craques a:hover{
+  font-weight: 1000;
+  background-color: rgb(0, 0, 0, 1);
+  box-shadow: 4px 4px 15px black;
+  transition: .4s;
+}
+
+.carrossel .divs-craques span{
+  font-size: 45px;
+  font-weight: 800;
+  text-align: left;
   width:1000px;
   height: 700px;
-  padding:100px 100px;
+  padding:50px 50px;
+  padding-right: 550px;
   overflow: hidden;
   color: white;
-  background-color: rgb(0, 0, 0, 0.3);
+  background-color: rgb(0, 0, 0, 0.5);
 }
+
+.carrossel #mbappe span{
+  font-size: 45px;
+  font-weight: 800;
+  text-align: left;
+  width:1000px;
+  height: 700px;
+  padding-right: 600px;
+  padding-left: 50px;
+  overflow: hidden;
+  color: white;
+  background-color: rgb(0, 0, 0, 0.5);
+}
+
+.carrossel #neymar span{
+  font-size: 45px;
+  font-weight: 800;
+  text-align: left;
+  width:1000px;
+  height: 700px;
+  padding-right: 500px;
+  padding-left: 40px;
+  padding-top:50px;
+  overflow: hidden;
+  color: white;
+  background-color: rgb(0, 0, 0, 0.5);
+}
+
+.carrossel #richarlison span{
+  font-size: 45px;
+  font-weight: 800;
+  text-align: left;
+  width:1000px;
+  height: 700px;
+  padding-right: 50px;
+  padding-left: 600px;
+  padding-top: 20px;
+  overflow: hidden;
+  color: white;
+  background-color: rgb(0, 0, 0, 0.5);
+}
+
 
 .carrossel ol #mbappe{
   background-image: url("../assets/imgs/ic-mbappe-bg.jpg");
@@ -370,7 +437,7 @@ cursor: pointer;
   height: 480px;
   width: 700px;
   margin-top: 50px;
-  margin-left: 280px;
+  margin-left: 380px;
   margin-right: 50px;
   overflow: hidden;
 }
@@ -382,32 +449,6 @@ cursor: pointer;
   width: 2500px;
   margin-left: 0px;
 }
-
-.fotos .setas{
-  display: flex;
-  width: 700px;
-  height: 480px;
-  justify-content: space-between;
-  overflow: hidden;
-  font-size: 100px;
-}
-
-
-.setas #esquerda, #direita{
-  display: flex;
-  justify-content: center;
-  align-items: cente/r;
-  height: 480px;
-  width: 80px;
-  background-color: black;
-
-}
-
-/* .setas #direita{
-  height: 480px;
-  width: 100px;
-  background-color: black;
-} */
 
 .fotos #barraminhasFotos{
   margin-top: 400px;
