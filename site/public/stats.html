@@ -33,431 +33,766 @@
             </div>
         </div> -->
 
-        <div class="banner">
-            <div class="container">
-                <div class="quadro">
-                    <div class="menu">
+    <div class="banner">
+        <div class="container">
+            <div class="quadro">
+                <div class="menu">
 
-                        <div id="nome" class="barranav"><p><p style="color:red;">23</p>Scores</p></div>
-
-                        <div onclick="selecoesFavoritas()" class="barranav" id="selecao_favorita"><span >Seleções Favoritas</span></div>
-
-                        <div onclick="FaseDeGrupos()"  id="fase-grupos" class="barranav"><span>Fase de Grupos</span></div>
-
-                        <div onclick="Titulos()" class="barranav" id="titulos"><span>Títulos</span></div>
-
-                        <div onclick="Eliminatorias()" id="eliminatórias"class="barranav"><span>Eliminatórias</span></div>
+                    <div id="nome" class="barranav">
+                        <p>
+                        <p style="color:red;">23</p>Scores</p>
                     </div>
 
-                    <div class="conteudo" id="div_selecoes_favoritas" style="display:block; background-color: blue;"></div>
-                    <div class="conteudo" id="div_fase_grupos" style="display:none;">
+                    <div onclick="selecoesFavoritas()" class="barranav" id="selecao_favorita"><span>Seleções
+                            Favoritas</span></div>
+
+                    <div onclick="FaseDeGrupos()" id="fase-grupos" class="barranav"><span>Fase de Grupos</span></div>
+
+                    <!-- <div onclick="Titulos()" class="barranav" id="titulos"><span>Títulos</span></div> -->
+
+                    <div onclick="Eliminatorias()" id="eliminatórias" class="barranav"><span>Eliminatórias</span></div>
+                </div>
+
+                <div class="conteudo" id="div_selecoes_favoritas" style="display:block;"></div>
+                <div class="conteudo" id="div_fase_grupos" style="display:none;">
                     <div class="container">
                         <div class="legenda">
-                            <div class="bolinha"></div>
-                            <span>Classificados para fase eliminatória</span>
+                            <div class="separacao">
+                                <div id="bolinha"></div>
+                                <span>Classificados para fase eliminatória</span>
+                            </div>
+                            <div class="separacao" id="desclassificados">
+                                <div id="bolinha2"></div>
+                                <span>Desclassificados</span>
+                            </div>
                         </div>
-                        <div class="colunas">               
+                        <div class="colunas">
                             <table>
-                            <tr>
-                                <td class="cabecalho"></td>
-                                <td id="nome_selecao" class="cabecalho"><b>Grupo A</b></td>
-                                <td class="cabecalho"><b>J</b></td>
-                                <td class="cabecalho"><b>V</b></td>
-                                <td class="cabecalho"><b>E</b></td>
-                                <td class="cabecalho"><b>D</b></td>
-                                <td class="cabecalho"><b>P</b></td>
-                            </tr>
-                            <tr>
-                                <td class="classificados"><b>1°</b></td>
-                                <td class="classificados">Holanda</td>
-                                <td class="classificados">2</td>
-                                <td class="classificados">1</td>
-                                <td class="classificados">1</td>
-                                <td class="classificados">0</td>
-                                <td class="classificados">4</td>
-                            </tr>
-                            <tr>
-                                <td class="classificados"><b>2°</b></td>
-                                <td class="classificados">Equador</td>
-                                <td class="classificados">2</td>
-                                <td class="classificados">1</td>
-                                <td class="classificados">1</td>
-                                <td class="classificados">0</td>
-                                <td class="classificados">4</td>
-                            </tr>
-                            <tr>
-                                <td><b>3°</b></td>
-                                <td>Senegal</td>
-                                <td>2</td>
-                                <td>1</td>
-                                <td>0</td>
-                                <td>1</td>
-                                <td>3</td>
-                            </tr>
-                            <tr>
-                                <td><b>4°</b></td>
-                                <td>Qatar</td>
-                                <td>2</td>
-                                <td>0</td>
-                                <td>0</td>
-                                <td>2</td>
-                                <td>0</td>
-                            </tr>
+                                <tr>
+                                    <td class="cabecalho"></td>
+                                    <td id="nome_selecao" class="cabecalho"><b>Grupo A</b></td>
+                                    <td class="cabecalho"><b>J</b></td>
+                                    <td class="cabecalho"><b>V</b></td>
+                                    <td class="cabecalho"><b>E</b></td>
+                                    <td class="cabecalho"><b>D</b></td>
+                                    <td class="cabecalho"><b>P</b></td>
+                                </tr>
+                                <tr>
+                                    <td class="classificados"><b>1°</b></td>
+                                    <td class="classificados">Holanda</td>
+                                    <td class="classificados">2</td>
+                                    <td class="classificados">1</td>
+                                    <td class="classificados">1</td>
+                                    <td class="classificados">0</td>
+                                    <td class="classificados">4</td>
+                                </tr>
+                                <tr>
+                                    <td class="classificados"><b>2°</b></td>
+                                    <td class="classificados">Equador</td>
+                                    <td class="classificados">2</td>
+                                    <td class="classificados">1</td>
+                                    <td class="classificados">1</td>
+                                    <td class="classificados">0</td>
+                                    <td class="classificados">4</td>
+                                </tr>
+                                <tr>
+                                    <td><b>3°</b></td>
+                                    <td>Senegal</td>
+                                    <td>2</td>
+                                    <td>1</td>
+                                    <td>0</td>
+                                    <td>1</td>
+                                    <td>3</td>
+                                </tr>
+                                <tr>
+                                    <td><b>4°</b></td>
+                                    <td>Qatar</td>
+                                    <td>2</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>2</td>
+                                    <td>0</td>
+                                </tr>
                             </table>
 
                             <table>
                                 <tr>
                                     <td class="cabecalho"></td>
-                                <td id="nome_selecao" class="cabecalho"><b>Grupo C</b></td>
-                                <td class="cabecalho"><b>J</b></td>
-                                <td class="cabecalho"><b>V</b></td>
-                                <td class="cabecalho"><b>E</b></td>
-                                <td class="cabecalho"><b>D</b></td>
-                                <td class="cabecalho"><b>P</b></td>
-                            </tr>
-                            <tr>
-                                <td class="classificados"><b>1°</b></td>
-                                <td class="classificados">Polônia</td>
-                                <td class="classificados">2</td>
-                                <td class="classificados">1</td>
-                                <td class="classificados">1</td>
-                                <td class="classificados">0</td>
-                                <td class="classificados">4</td>
-                            </tr>
-                            <tr>
-                                <td class="classificados"><b>2°</b></td>
-                                <td class="classificados">Argentina</td>
-                                <td class="classificados">2</td>
-                                <td class="classificados">1</td>
-                                <td class="classificados">0</td>
-                                <td class="classificados">1</td>
-                                <td class="classificados">3</td>
-                            </tr>
-                            <tr>
-                                <td><b>3°</b></td>
-                                <td>Arábia Saudita</td>
-                                <td>2</td>
-                                <td>1</td>
-                                <td>0</td>
-                                <td>1</td>
-                                <td>3</td>
-                            </tr>
-                            <tr>
-                                <td><b>4°</b></td>
-                                <td>México</td>
-                                <td>2</td>
-                                <td>0</td>
-                                <td>1</td>
-                                <td>1</td>
-                                <td>1</td>
-                            </tr>
+                                    <td id="nome_selecao" class="cabecalho"><b>Grupo C</b></td>
+                                    <td class="cabecalho"><b>J</b></td>
+                                    <td class="cabecalho"><b>V</b></td>
+                                    <td class="cabecalho"><b>E</b></td>
+                                    <td class="cabecalho"><b>D</b></td>
+                                    <td class="cabecalho"><b>P</b></td>
+                                </tr>
+                                <tr>
+                                    <td class="classificados"><b>1°</b></td>
+                                    <td class="classificados">Polônia</td>
+                                    <td class="classificados">2</td>
+                                    <td class="classificados">1</td>
+                                    <td class="classificados">1</td>
+                                    <td class="classificados">0</td>
+                                    <td class="classificados">4</td>
+                                </tr>
+                                <tr>
+                                    <td class="classificados"><b>2°</b></td>
+                                    <td class="classificados">Argentina</td>
+                                    <td class="classificados">2</td>
+                                    <td class="classificados">1</td>
+                                    <td class="classificados">0</td>
+                                    <td class="classificados">1</td>
+                                    <td class="classificados">3</td>
+                                </tr>
+                                <tr>
+                                    <td><b>3°</b></td>
+                                    <td>Arábia Saudita</td>
+                                    <td>2</td>
+                                    <td>1</td>
+                                    <td>0</td>
+                                    <td>1</td>
+                                    <td>3</td>
+                                </tr>
+                                <tr>
+                                    <td><b>4°</b></td>
+                                    <td>México</td>
+                                    <td>2</td>
+                                    <td>0</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                </tr>
                             </table>
 
                             <table>
                                 <tr>
                                     <td class="cabecalho"></td>
-                                <td id="nome_selecao" class="cabecalho"><b>Grupo E</b></td>
-                                <td class="cabecalho"><b>J</b></td>
-                                <td class="cabecalho"><b>V</b></td>
-                                <td class="cabecalho"><b>E</b></td>
-                                <td class="cabecalho"><b>D</b></td>
-                                <td class="cabecalho"><b>P</b></td>
-                            </tr>
-                            <tr>
-                                <td class="classificados"><b>1°</b></td>
-                                <td class="classificados">Espanha</td>
-                                <td class="classificados">2</td>
-                                <td class="classificados">1</td>
-                                <td class="classificados">1</td>
-                                <td class="classificados">0</td>
-                                <td class="classificados">4</td>
-                            </tr>
-                            <tr>
-                                <td class="classificados"><b>2°</b></td>
-                                <td class="classificados">Japão</td>
-                                <td class="classificados">2</td>
-                                <td class="classificados">1</td>
-                                <td class="classificados">0</td>
-                                <td class="classificados">1</td>
-                                <td class="classificados">3</td>
-                            </tr>
-                            <tr>
-                                <td><b>3°</b></td>
-                                <td>Costa Rica</td>
-                                <td>2</td>
-                                <td>1</td>
-                                <td>0</td>
-                                <td>1</td>
-                                <td>3</td>
-                            </tr>
-                            <tr>
-                                <td><b>4°</b></td>
-                                <td>Alemanha</td>
-                                <td>2</td>
-                                <td>0</td>
-                                <td>1</td>
-                                <td>1</td>
-                                <td>1</td>
-                            </tr>
+                                    <td id="nome_selecao" class="cabecalho"><b>Grupo E</b></td>
+                                    <td class="cabecalho"><b>J</b></td>
+                                    <td class="cabecalho"><b>V</b></td>
+                                    <td class="cabecalho"><b>E</b></td>
+                                    <td class="cabecalho"><b>D</b></td>
+                                    <td class="cabecalho"><b>P</b></td>
+                                </tr>
+                                <tr>
+                                    <td class="classificados"><b>1°</b></td>
+                                    <td class="classificados">Espanha</td>
+                                    <td class="classificados">2</td>
+                                    <td class="classificados">1</td>
+                                    <td class="classificados">1</td>
+                                    <td class="classificados">0</td>
+                                    <td class="classificados">4</td>
+                                </tr>
+                                <tr>
+                                    <td class="classificados"><b>2°</b></td>
+                                    <td class="classificados">Japão</td>
+                                    <td class="classificados">2</td>
+                                    <td class="classificados">1</td>
+                                    <td class="classificados">0</td>
+                                    <td class="classificados">1</td>
+                                    <td class="classificados">3</td>
+                                </tr>
+                                <tr>
+                                    <td><b>3°</b></td>
+                                    <td>Costa Rica</td>
+                                    <td>2</td>
+                                    <td>1</td>
+                                    <td>0</td>
+                                    <td>1</td>
+                                    <td>3</td>
+                                </tr>
+                                <tr>
+                                    <td><b>4°</b></td>
+                                    <td>Alemanha</td>
+                                    <td>2</td>
+                                    <td>0</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                </tr>
                             </table>
 
                             <table>
                                 <tr>
                                     <td class="cabecalho"></td>
-                                <td id="nome_selecao" class="cabecalho"><b>Grupo G</b></td>
-                                <td class="cabecalho"><b>J</b></td>
-                                <td class="cabecalho"><b>V</b></td>
-                                <td class="cabecalho"><b>E</b></td>
-                                <td class="cabecalho"><b>D</b></td>
-                                <td class="cabecalho"><b>P</b></td>
-                            </tr>
-                            <tr>
-                                <td class="classificados"><b>1°</b></td>
-                                <td class="classificados">Brasil</td>
-                                <td class="classificados">1</td>
-                                <td class="classificados">1</td>
-                                <td class="classificados">0</td>
-                                <td class="classificados">0</td>
-                                <td class="classificados">3</td>
-                            </tr>
-                            <tr>
-                                <td class="classificados"><b>2°</b></td>
-                                <td class="classificados">Suiça</td>
-                                <td class="classificados">1</td>
-                                <td class="classificados">1</td>
-                                <td class="classificados">0</td>
-                                <td class="classificados">0</td>
-                                <td class="classificados">3</td>
-                            </tr>
-                            <tr>
-                                <td><b>3°</b></td>
-                                <td>Camarões</td>
-                                <td>1</td>
-                                <td>0</td>
-                                <td>0</td>
-                                <td>1</td>
-                                <td>3</td>
-                            </tr>
-                            <tr>
-                                <td><b>4°</b></td>
-                                <td>Sérvia</td>
-                                <td>1</td>
-                                <td>0</td>
-                                <td>0</td>
-                                <td>1</td>
-                                <td>0</td>
-                            </tr>
+                                    <td id="nome_selecao" class="cabecalho"><b>Grupo G</b></td>
+                                    <td class="cabecalho"><b>J</b></td>
+                                    <td class="cabecalho"><b>V</b></td>
+                                    <td class="cabecalho"><b>E</b></td>
+                                    <td class="cabecalho"><b>D</b></td>
+                                    <td class="cabecalho"><b>P</b></td>
+                                </tr>
+                                <tr>
+                                    <td class="classificados"><b>1°</b></td>
+                                    <td class="classificados">Brasil</td>
+                                    <td class="classificados">1</td>
+                                    <td class="classificados">1</td>
+                                    <td class="classificados">0</td>
+                                    <td class="classificados">0</td>
+                                    <td class="classificados">3</td>
+                                </tr>
+                                <tr>
+                                    <td class="classificados"><b>2°</b></td>
+                                    <td class="classificados">Suiça</td>
+                                    <td class="classificados">1</td>
+                                    <td class="classificados">1</td>
+                                    <td class="classificados">0</td>
+                                    <td class="classificados">0</td>
+                                    <td class="classificados">3</td>
+                                </tr>
+                                <tr>
+                                    <td><b>3°</b></td>
+                                    <td>Camarões</td>
+                                    <td>1</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>1</td>
+                                    <td>3</td>
+                                </tr>
+                                <tr>
+                                    <td><b>4°</b></td>
+                                    <td>Sérvia</td>
+                                    <td>1</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>1</td>
+                                    <td>0</td>
+                                </tr>
                             </table>
 
-                            
+
 
                         </div>
 
-                        <div class="colunas">  
-                            
+                        <div class="colunas">
+
                             <table>
-                            <tr>
+                                <tr>
                                     <td class="cabecalho"></td>
-                                <td id="nome_selecao" class="cabecalho"><b>Grupo B</b></td>
-                                <td class="cabecalho"><b>J</b></td>
-                                <td class="cabecalho"><b>V</b></td>
-                                <td class="cabecalho"><b>E</b></td>
-                                <td class="cabecalho"><b>D</b></td>
-                                <td class="cabecalho"><b>P</b></td>
-                            </tr>
-                            <tr>
-                                <td class="classificados"><b>1°</b></td>
-                                <td class="classificados">Inglaterra</td>
-                                <td class="classificados">2</td>
-                                <td class="classificados">1</td>
-                                <td class="classificados">1</td>
-                                <td class="classificados">0</td>
-                                <td class="classificados">4</td>
-                            </tr>
-                            <tr>
-                                <td class="classificados"><b>2°</b></td>
-                                <td class="classificados">Irã</td>
-                                <td class="classificados">2</td>
-                                <td class="classificados">1</td>
-                                <td class="classificados">0</td>
-                                <td class="classificados">1</td>
-                                <td class="classificados">3</td>
-                            </tr>
-                            <tr>
-                                <td><b>3°</b></td>
-                                <td>EUA</td>
-                                <td>2</td>
-                                <td>0</td>
-                                <td>2</td>
-                                <td>0</td>
-                                <td>2</td>
-                            </tr>
-                            <tr>
-                                <td><b>4°</b></td>
-                                <td>Pais de Gales</td>
-                                <td>2</td>
-                                <td>0</td>
-                                <td>1</td>
-                                <td>1</td>
-                                <td>1</td>
-                            </tr>
+                                    <td id="nome_selecao" class="cabecalho"><b>Grupo B</b></td>
+                                    <td class="cabecalho"><b>J</b></td>
+                                    <td class="cabecalho"><b>V</b></td>
+                                    <td class="cabecalho"><b>E</b></td>
+                                    <td class="cabecalho"><b>D</b></td>
+                                    <td class="cabecalho"><b>P</b></td>
+                                </tr>
+                                <tr>
+                                    <td class="classificados"><b>1°</b></td>
+                                    <td class="classificados">Inglaterra</td>
+                                    <td class="classificados">2</td>
+                                    <td class="classificados">1</td>
+                                    <td class="classificados">1</td>
+                                    <td class="classificados">0</td>
+                                    <td class="classificados">4</td>
+                                </tr>
+                                <tr>
+                                    <td class="classificados"><b>2°</b></td>
+                                    <td class="classificados">Irã</td>
+                                    <td class="classificados">2</td>
+                                    <td class="classificados">1</td>
+                                    <td class="classificados">0</td>
+                                    <td class="classificados">1</td>
+                                    <td class="classificados">3</td>
+                                </tr>
+                                <tr>
+                                    <td><b>3°</b></td>
+                                    <td>EUA</td>
+                                    <td>2</td>
+                                    <td>0</td>
+                                    <td>2</td>
+                                    <td>0</td>
+                                    <td>2</td>
+                                </tr>
+                                <tr>
+                                    <td><b>4°</b></td>
+                                    <td>Pais de Gales</td>
+                                    <td>2</td>
+                                    <td>0</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                </tr>
                             </table>
 
                             <table>
                                 <tr>
                                     <td class="cabecalho"></td>
-                                <td id="nome_selecao" class="cabecalho"><b>Grupo D</b></td>
-                                <td class="cabecalho"><b>J</b></td>
-                                <td class="cabecalho"><b>V</b></td>
-                                <td class="cabecalho"><b>E</b></td>
-                                <td class="cabecalho"><b>D</b></td>
-                                <td class="cabecalho"><b>P</b></td>
-                            </tr>
-                            <tr>
-                                <td class="classificados"><b>1°</b></td>
-                                <td class="classificados">França</td>
-                                <td class="classificados">2</td>
-                                <td class="classificados">2</td>
-                                <td class="classificados">0</td>
-                                <td class="classificados">0</td>
-                                <td class="classificados">6</td>
-                            </tr>
-                            <tr>
-                                <td class="classificados"><b>2°</b></td>
-                                <td class="classificados">Austrália</td>
-                                <td class="classificados">2</td>
-                                <td class="classificados">1</td>
-                                <td class="classificados">0</td>
-                                <td class="classificados">1</td>
-                                <td class="classificados">3</td>
-                            </tr>
-                            <tr>
-                                <td><b>3°</b></td>
-                                <td>Dinamarca</td>
-                                <td>2</td>
-                                <td>0</td>
-                                <td>1</td>
-                                <td>1</td>
-                                <td>1</td>
-                            </tr>
-                            <tr>
-                                <td><b>4°</b></td>
-                                <td>Tunísia</td>
-                                <td>2</td>
-                                <td>0</td>
-                                <td>1</td>
-                                <td>1</td>
-                                <td>1</td>
-                            </tr>
+                                    <td id="nome_selecao" class="cabecalho"><b>Grupo D</b></td>
+                                    <td class="cabecalho"><b>J</b></td>
+                                    <td class="cabecalho"><b>V</b></td>
+                                    <td class="cabecalho"><b>E</b></td>
+                                    <td class="cabecalho"><b>D</b></td>
+                                    <td class="cabecalho"><b>P</b></td>
+                                </tr>
+                                <tr>
+                                    <td class="classificados"><b>1°</b></td>
+                                    <td class="classificados">França</td>
+                                    <td class="classificados">2</td>
+                                    <td class="classificados">2</td>
+                                    <td class="classificados">0</td>
+                                    <td class="classificados">0</td>
+                                    <td class="classificados">6</td>
+                                </tr>
+                                <tr>
+                                    <td class="classificados"><b>2°</b></td>
+                                    <td class="classificados">Austrália</td>
+                                    <td class="classificados">2</td>
+                                    <td class="classificados">1</td>
+                                    <td class="classificados">0</td>
+                                    <td class="classificados">1</td>
+                                    <td class="classificados">3</td>
+                                </tr>
+                                <tr>
+                                    <td><b>3°</b></td>
+                                    <td>Dinamarca</td>
+                                    <td>2</td>
+                                    <td>0</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td><b>4°</b></td>
+                                    <td>Tunísia</td>
+                                    <td>2</td>
+                                    <td>0</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                </tr>
                             </table>
 
                             <table>
                                 <tr>
                                     <td class="cabecalho"></td>
-                                <td id="nome_selecao" class="cabecalho"><b>Grupo F</b></td>
-                                <td class="cabecalho"><b>J</b></td>
-                                <td class="cabecalho"><b>V</b></td>
-                                <td class="cabecalho"><b>E</b></td>
-                                <td class="cabecalho"><b>D</b></td>
-                                <td class="cabecalho"><b>P</b></td>
-                            </tr>
-                            <tr>
-                                <td class="classificados"><b>1°</b></td>
-                                <td class="classificados">Croácia</td>
-                                <td class="classificados">2</td>
-                                <td class="classificados">1</td>
-                                <td class="classificados">1</td>
-                                <td class="classificados">0</td>
-                                <td class="classificados">4</td>
-                            </tr>
-                            <tr>
-                                <td class="classificados"><b>2°</b></td>
-                                <td class="classificados">Marrocos</td>
-                                <td class="classificados">2</td>
-                                <td class="classificados">1</td>
-                                <td class="classificados">1</td>
-                                <td class="classificados">0</td>
-                                <td class="classificados">4</td>
-                            </tr>
-                            <tr>
-                                <td><b>3°</b></td>
-                                <td>Bélgica</td>
-                                <td>2</td>
-                                <td>1</td>
-                                <td>0</td>
-                                <td>1</td>
-                                <td>3</td>
-                            </tr>
-                            <tr>
-                                <td><b>4°</b></td>
-                                <td>Canadá</td>
-                                <td>2</td>
-                                <td>0</td>
-                                <td>0</td>
-                                <td>2</td>
-                                <td>0</td>
-                            </tr>
+                                    <td id="nome_selecao" class="cabecalho"><b>Grupo F</b></td>
+                                    <td class="cabecalho"><b>J</b></td>
+                                    <td class="cabecalho"><b>V</b></td>
+                                    <td class="cabecalho"><b>E</b></td>
+                                    <td class="cabecalho"><b>D</b></td>
+                                    <td class="cabecalho"><b>P</b></td>
+                                </tr>
+                                <tr>
+                                    <td class="classificados"><b>1°</b></td>
+                                    <td class="classificados">Croácia</td>
+                                    <td class="classificados">2</td>
+                                    <td class="classificados">1</td>
+                                    <td class="classificados">1</td>
+                                    <td class="classificados">0</td>
+                                    <td class="classificados">4</td>
+                                </tr>
+                                <tr>
+                                    <td class="classificados"><b>2°</b></td>
+                                    <td class="classificados">Marrocos</td>
+                                    <td class="classificados">2</td>
+                                    <td class="classificados">1</td>
+                                    <td class="classificados">1</td>
+                                    <td class="classificados">0</td>
+                                    <td class="classificados">4</td>
+                                </tr>
+                                <tr>
+                                    <td><b>3°</b></td>
+                                    <td>Bélgica</td>
+                                    <td>2</td>
+                                    <td>1</td>
+                                    <td>0</td>
+                                    <td>1</td>
+                                    <td>3</td>
+                                </tr>
+                                <tr>
+                                    <td><b>4°</b></td>
+                                    <td>Canadá</td>
+                                    <td>2</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>2</td>
+                                    <td>0</td>
+                                </tr>
                             </table>
 
                             <table>
                                 <tr>
                                     <td class="cabecalho"></td>
-                                <td id="nome_selecao" class="cabecalho"><b>Grupo H</b></td>
-                                <td class="cabecalho"><b>J</b></td>
-                                <td class="cabecalho"><b>V</b></td>
-                                <td class="cabecalho"><b>E</b></td>
-                                <td class="cabecalho"><b>D</b></td>
-                                <td class="cabecalho"><b>P</b></td>
-                            </tr>
-                            <tr>
-                                <td class="classificados"><b>1°</b></td>
-                                <td class="classificados">Portugal</td>
-                                <td class="classificados">1</td>
-                                <td class="classificados">1</td>
-                                <td class="classificados">0</td>
-                                <td class="classificados">0</td>
-                                <td class="classificados">3</td>
-                            </tr>
-                            <tr>
-                                <td class="classificados"><b>2°</b></td>
-                                <td class="classificados">Coréia do Sul</td>
-                                <td class="classificados">1</td>
-                                <td class="classificados">0</td>
-                                <td class="classificados">1</td>
-                                <td class="classificados">0</td>
-                                <td class="classificados">1</td>
-                            </tr>
-                            
-                            <tr>
-                                <td><b>3°</b></td>
-                                <td>Uruguai</td>
-                                <td>1</td>
-                                <td>0</td>
-                                <td>1</td>
-                                <td>0</td>
-                                <td>1</td>
-                            </tr>
-                            <tr>
-                                <td><b>4°</b></td>
-                                <td>Gana</td>
-                                <td>1</td>
-                                <td>0</td>
-                                <td>0</td>
-                                <td>1</td>
-                                <td>0</td>
-                            </tr>
+                                    <td id="nome_selecao" class="cabecalho"><b>Grupo H</b></td>
+                                    <td class="cabecalho"><b>J</b></td>
+                                    <td class="cabecalho"><b>V</b></td>
+                                    <td class="cabecalho"><b>E</b></td>
+                                    <td class="cabecalho"><b>D</b></td>
+                                    <td class="cabecalho"><b>P</b></td>
+                                </tr>
+                                <tr>
+                                    <td class="classificados"><b>1°</b></td>
+                                    <td class="classificados">Portugal</td>
+                                    <td class="classificados">1</td>
+                                    <td class="classificados">1</td>
+                                    <td class="classificados">0</td>
+                                    <td class="classificados">0</td>
+                                    <td class="classificados">3</td>
+                                </tr>
+                                <tr>
+                                    <td class="classificados"><b>2°</b></td>
+                                    <td class="classificados">Coréia do Sul</td>
+                                    <td class="classificados">1</td>
+                                    <td class="classificados">0</td>
+                                    <td class="classificados">1</td>
+                                    <td class="classificados">0</td>
+                                    <td class="classificados">1</td>
+                                </tr>
+
+                                <tr>
+                                    <td><b>3°</b></td>
+                                    <td>Uruguai</td>
+                                    <td>1</td>
+                                    <td>0</td>
+                                    <td>1</td>
+                                    <td>0</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td><b>4°</b></td>
+                                    <td>Gana</td>
+                                    <td>1</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>1</td>
+                                    <td>0</td>
+                                </tr>
                             </table>
 
                         </div>
                     </div>
+                </div>
+                <div class="conteudo" id="divEliminatorias">
+                    <div class="container">
+                        <div class="round oitavas">
+                            <div class="etapa">
+                                <span>Oitavas de final</span>
+                            </div>
+                            <div class="partidas">
+                                <ul>
+                                    <li id="li-classificado">
+                                        <div class="imagem"><img src="./assets/imgs/bandeira-selecao/Holanda.png"
+                                                width="40px"></div>
+                                        <div class="nome">Holanda</div>
+                                        <div class="placar">
+                                            3
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="imagem"><img src="assets/imgs/bandeira-selecao/Estados Unidos.png"
+                                                width="40px"></div>
+                                        <div class="nome">EUA</div>
+                                        <div class="placar">
+                                            1
+                                        </div>
+                                    </li>
+                                    <span>
+                                        03/12
+                                    </span>
+                                </ul>
+                                <ul>
+                                    <li id="li-classificado">
+                                        <div class="imagem"><img src="assets/imgs/bandeira-selecao/Argentina.png"
+                                                width="40px"></div>
+                                        <div class="nome">Argentina</div>
+                                        <div class="placar">
+                                            2
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="imagem">
+                                            <img src="assets/imgs/bandeira-selecao/Austrália.png" width="40px">
+                                        </div>
+                                        <div class="nome">
+                                            Austrália
+                                        </div>
+                                        <div class="placar">
+                                            1
+                                        </div>
+                                    </li>
+                                    <span>
+                                        03/12
+                                    </span>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <div class="imagem">
+                                            <img src="assets/imgs/bandeira-selecao/Japão.png" width="40px">
+                                        </div>
+                                        <div class="nome">
+                                            Japão
+                                        </div>
+                                        <div class="placar">
+
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="imagem">
+                                            <img src="assets/imgs/bandeira-selecao/Croácia.png" width="40px">
+                                        </div>
+                                        <div class="nome">
+                                            Croácia
+                                        </div>
+                                        <div class="placar">
+
+                                        </div>
+                                    </li>
+                                    <span>
+                                        05/12
+                                    </span>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <div class="imagem">
+                                            <img src="assets/imgs/bandeira-selecao/Brasil.png" width="40px">
+                                        </div>
+                                        <div class="nome">
+                                            Brasil
+                                        </div>
+                                        <div class="placar">
+
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="imagem">
+                                            <img src="assets/imgs/bandeira-selecao/Coréia do Sul.png" width="40px">
+                                        </div>
+                                        <div class="nome">
+                                            Coréia do Sul
+                                        </div>
+                                        <div class="placar">
+
+                                        </div>
+                                    </li>
+                                    <span>
+                                        05/12
+                                    </span>
+                                </ul>
+                            </div>
+
+                        </div>
+                        <div class="round quartas">
+                            <div class="etapa">
+                                <span>Quartas de final</span>
+                            </div>
+                            <div class="partidas">
+                                <ul>
+                                    <li>
+                                        <div class="imagem">
+                                            <img src="assets/imgs/bandeira-selecao/Holanda.png" width="40px">
+                                        </div>
+                                        <div class="nome">
+                                            Holanda
+                                        </div>
+                                        <div class="placar">
+
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="imagem">
+                                            <img src="assets/imgs/bandeira-selecao/Argentina.png" width="40px">
+                                        </div>
+                                        <div class="nome">
+                                            Argentina
+                                        </div>
+                                        <div class="placar">
+
+                                        </div>
+                                    </li>
+                                    <span>
+                                        09/12
+                                    </span>
+                                </ul>
+                                <ul>
+                                    <li></li>
+                                    <li></li>
+                                    <span>
+                                        09/12
+                                    </span>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="round semi">
+                            <div class="etapa">
+                                <span>Semifinal</span>
+                            </div>
+                            <div class="partidas">
+                                <ul>
+                                    <li></li>
+                                    <li></li>
+                                    <span>
+                                        13/12
+                                    </span>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="round final">
+                            <div class="etapa">
+                                <span>Final</span>
+                            </div>
+                            <div id="taca">
+                                <img src="./assets/imgs/taca.png" width="80px">
+                            </div>
+                            <div class="partidas">
+                                <ul>
+                                    <li></li>
+                                    <li></li>
+                                    <span>
+                                        18/12
+                                    </span>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="round semi">
+                            <div class="etapa">
+                                <span>Semifinal</span>
+                            </div>
+                            <div class="partidas">
+                                <ul>
+                                    <li></li>
+                                    <li></li>
+                                    <span>
+                                        14/12
+                                    </span>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="round quartas">
+                            <div class="etapa">
+                                <span>Quartas de final</span>
+                            </div>
+                            <div class="partidas">
+                                <ul>
+                                    <li></li>
+                                    <li></li>
+                                    <span>
+                                        10/12
+                                    </span>
+                                </ul>
+                                <ul>
+                                    <li></li>
+                                    <li></li>
+                                    <span>
+                                        10/12
+                                    </span>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="round oitavas">
+                            <div class="etapa">
+                                <span>Oitavas de final</span>
+                            </div>
+                            <div class="partidas">
+                                <ul>
+                                    <li>
+                                        <div class="placar"></div>
+                                        <div class="nome">
+                                            França
+                                        </div>
+                                        <div class="imagem">
+                                            <img src="assets/imgs/bandeira-selecao/França.png" width="40px">
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="placar"></div>
+                                        <div class="nome">
+                                            Polônia
+                                        </div>
+                                        <div class="imagem">
+                                            <img src="assets/imgs/bandeira-selecao/Polônia.png" width="40px">
+                                        </div>
+                                    </li>
+                                    <span>
+                                        04/12
+                                    </span>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <div class="placar">
+
+                                        </div>
+                                        <div class="nome">
+                                            Inglaterra
+                                        </div>
+                                        <div class="imagem">
+                                            <img src="assets/imgs/bandeira-selecao/Inglaterra.png" width="40px">
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="placar">
+
+                                        </div>
+                                        <div class="nome">
+                                            Senegal
+                                        </div>
+                                        <div class="imagem">
+                                            <img src="assets/imgs/bandeira-selecao/Senegal.png" width="40px">
+                                        </div>
+                                    </li>
+                                    <span>
+                                        04/12
+                                    </span>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <div class="placar">
+
+                                        </div>
+                                        <div class="nome">
+                                            Marrocos
+                                        </div>
+                                        <div class="imagem">
+                                            <img src="assets/imgs/bandeira-selecao/Marrocos.png" width="40px">
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="placar">
+
+                                        </div>
+                                        <div class="nome">
+                                            Espanha
+                                        </div>
+                                        <div class="imagem">
+                                            <img src="assets/imgs/bandeira-selecao/Espanha.png" width="40px">
+                                        </div>
+                                    </li>
+                                    <span>
+                                        06/12
+                                    </span>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <div class="placar">
+
+                                        </div>
+                                        <div class="nome">
+                                            Portugal
+                                        </div>
+                                        <div class="imagem">
+                                            <img src="assets/imgs/bandeira-selecao/Portugal.png" width="40px">
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="placar">
+
+                                        </div>
+                                        <div class="nome">
+                                            Suíça
+                                        </div>
+                                        <div class="imagem">
+                                            <img src="assets/imgs/bandeira-selecao/Suíça.png" width="40px">
+                                        </div>
+                                    </li>
+                                    <span>
+                                        06/12
+                                    </span>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-                    <div class="conteudo" id="div_titulos" style="display:none; background-color: blueviolet;">
-                
-                    </div>
-                    <div class="conteudo" id="div_eliminatorias" style="display:none; background-color:brown;"></div>
                 </div>
             </div>
         </div>
+    </div>
     </div>
 
     <!--footer inicio-->
@@ -476,31 +811,31 @@
 </html>
 <script>
 
-function selecoesFavoritas() {
-    div_selecoes_favoritas.style.display = "block"
-    div_fase_grupos.style.display = "none"
-    div_titulos.style.display = "none"
-    div_eliminatorias.style.display = "none"
-}
+    function selecoesFavoritas() {
+        div_selecoes_favoritas.style.display = "block"
+        div_fase_grupos.style.display = "none"
+        // div_titulos.style.display = "none"
+        divEliminatorias.style.display = "none"
+    }
 
-function FaseDeGrupos() {
-    div_selecoes_favoritas.style.display = "none"
-    div_fase_grupos.style.display = "block"
-    div_titulos.style.display = "none"
-    div_eliminatorias.style.display = "none"
-}
+    function FaseDeGrupos() {
+        div_selecoes_favoritas.style.display = "none"
+        div_fase_grupos.style.display = "block"
+        // div_titulos.style.display = "none"
+        divEliminatorias.style.display = "none"
+    }
 
-function Titulos() {
-    div_selecoes_favoritas.style.display = "none"
-    div_fase_grupos.style.display = "none"
-    div_titulos.style.display = "block"
-    div_eliminatorias.style.display = "none"
-}
+    // function Titulos() {
+    //     div_selecoes_favoritas.style.display = "none"
+    //     div_fase_grupos.style.display = "none"
+    //     div_titulos.style.display = "block"
+    //     div_eliminatorias.style.display = "none"
+    // }
 
-function Eliminatorias() {
-    div_selecoes_favoritas.style.display = "none"
-    div_fase_grupos.style.display = "none"
-    div_titulos.style.display = "none"
-    div_eliminatorias.style.display = "block"
-}
+    function Eliminatorias() {
+        div_selecoes_favoritas.style.display = "none"
+        div_fase_grupos.style.display = "none"
+        // div_titulos.style.display = "none"
+        divEliminatorias.style.display = "block"
+    }
 </script>
