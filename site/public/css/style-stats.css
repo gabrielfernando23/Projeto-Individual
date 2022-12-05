@@ -20,14 +20,13 @@
     background-color: white;
     height: 720px;
     width: 1300px;
-    margin-left: 100px;
+    margin-left: 120px;
     border-radius: 20px;
     margin-bottom: 50px;
     margin-bottom: 100px;
 }
 
 .quadro .menu{
-    /* border: solid 2px black; */
     height: 720px;
     width: 260px;
     border-bottom-left-radius: 20px;
@@ -35,20 +34,36 @@
     background-color: black;
 }
 
+.menu .voltar{
+margin-top: 25px;
+margin-right: 190px;
+}
+
+.menu .voltar:hover{
+    cursor: pointer;
+    
+}
+
 .barranav span{
     font-weight:500;
     font-size: 25px;
 }
 
+.menu #nome span{
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 50px;
+}
+
 .menu #nome{
     display: flex;
+    flex-direction: column;
     height: 150px;
     justify-content: center;
     align-items: center;
-    font-size: 45px;
-    font-weight: 800;
     color: white;
     border-top-left-radius: 15px;
+    margin-right: 10px;
 }
 .menu .barranav{
     display: flex;
@@ -57,12 +72,15 @@
     width:259px;
     justify-content: center;
     align-items: center;
-    /* border-radius: 15px; */
     background-color: black;
     color: white;
 }
 
-.menu .barranav:hover, .menu .barranav span:hover{
+.menu #selecao_favorita{
+    font-weight: 1000;
+}
+
+.menu .barranav span:hover{
     cursor: pointer;
     font-weight: 1000;
 }
@@ -77,6 +95,136 @@
     border-bottom-right-radius: 20px;
     background-color: gainsboro;
 }
+
+/* Seleções Favoritas */
+
+#div_selecoes_favoritas .container{
+    margin: 0;
+    height: 715px;
+}
+
+#div_selecoes_favoritas .kpi{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 100%;
+    height: 500px;
+    margin-bottom: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#div_selecoes_favoritas .container .estatistica{
+    width:300px;
+    height: 240px;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 2px 2px 10px black;
+    margin: 0;
+}
+
+#div_selecoes_favoritas .container .estatistica:hover{
+box-shadow: 6px 6px 10px black;
+transition: .4s;
+}
+
+
+.estatistica .titulo{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.estatistica .cont{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.estatistica .escudo-selecao{
+    display: flex;
+    justify-content: center;
+}
+
+#selecaoFav1, #selecaoFav2, #selecaoFav3{
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+#titulo-lista{
+    display:flex;
+    justify-content:center;
+    width: 100%;
+    font-size:35px;
+    font-weight:700;
+    margin-bottom:20px;
+}
+
+#div_selecoes_favoritas .container .lista{
+    display: flex;
+    margin-left: 25px;
+    box-shadow: 3px 3px 10px black;
+    border-radius: 20px;
+    width: 95%;
+    height: 400px;
+    background-color: white;
+    margin-bottom: 40px;
+}
+
+#div_selecoes_favoritas .container .lista:hover{
+    box-shadow: 6px 6px 10px black;
+    transition: .4s;
+}
+
+#div_selecoes_favoritas .container .lista ol{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#indice{
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    border-top-right-radius:20px;
+    border-top-left-radius:20px;
+}
+
+#ultimo{
+    border-bottom-right-radius:20px;
+    border-bottom-left-radius:20px;
+}
+
+#div_selecoes_favoritas .container .lista li{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border: 2px solid black;
+    height: 55px;
+}
+
+#div_selecoes_favoritas .lista .posicao-selecao{
+    display:flex;
+    justify-content:center;
+    width: 33%;
+}
+
+#div_selecoes_favoritas .lista .nome-selecao{
+    display:flex;
+    justify-content:center;
+    width: 33%;
+}
+#div_selecoes_favoritas .lista .qtdFavoritada{
+    display:flex;
+    justify-content:center;
+    width: 33%;
+}
+
 
 /* Fase de Grupos */
 
@@ -137,19 +285,62 @@ font-weight: 500;
 
 #div_fase_grupos .legenda{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     height: 130px;
     width: 1040px;
-    justify-content: center;
     align-items: center;
     border-top-right-radius: 20px;
     position: absolute;
     margin-bottom: 650px;
+    padding-left: 30px;
     background-color: white;
     border-top: 3px solid black;
     border-right: 3px solid black;
     border-bottom: 5px solid black;
 }
+
+#div_fase_grupos .legenda .legenda-tabela1{
+    display: flex;
+    flex-direction: column;
+}
+
+#div_fase_grupos .legenda #stats-tabela{
+    display: flex;
+    flex-direction: row;
+    height: 120px;
+    width: 300px;
+    margin-left: 50px;
+    align-items: center;
+}
+
+#stats-tabela .nomes-stats{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+}
+
+.nomes-stats .bolinha-nome{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 800;
+    border: 3px solid black;
+    width: 30px;
+    border-radius: 25px;
+}
+
+.nomes-stats span{
+    margin-left: 20px;
+    font-size: 25px;
+}
+
+#stats-tabela .coluna{
+    display: flex;
+    flex-direction: column;
+}
+
 
 #div_fase_grupos .separacao{
     display: flex;
@@ -159,121 +350,32 @@ font-weight: 500;
 }
 
 #div_fase_grupos .legenda span{
-    margin-left: 15px;
     font-weight: 800;
     font-size: 25px;
 }
 
 #div_fase_grupos .legenda #bolinha{
     background-color:#15e30e;
-    height:50px;
-    width: 50px;
-    border-radius: 50px;
+    height:35px;
+    width: 35px;
+    border-radius: 25px;
     border: 4px solid black;
+    margin-right: 20px;
 }
 
 #div_fase_grupos .legenda #bolinha2{
     background-color:white;
-    height:50px;
-    width: 50px;
-    border-radius: 50px;
+    height:35px;
+    width: 35px;
+    border-radius: 25px;
     border: 4px solid black;
+    margin-right: 20px;
 }
 
 #div_fase_grupos .legenda #desclassificados{
     margin-right: 212px;
     margin-top: 15px;
 }
-
-
-/* Titulos */
-
-/* #div_titulos{
-    overflow: hidden;
-    overflow-y: scroll;
-    height: 100%;
-    width: 100%;
-}
-
-#div_titulos .container{
-display: flex;
-flex-direction: column;
-border: solid 3px yellow;
-width: 100%;
-height: 1500px;
-margin: 0;
-/* border-top-right-radius: 20px;
-border-bottom-right-radius: 20px; */
-/* }
-
-#indices{
-    display: flex;
-    flex-direction: row;
-    height: 60px;
-    justify-content: space-around;
-    border: 2px solid black;
-    margin-top:0px;
-    
-}
-
-#anoEdicoes, #indiceSede, #indiceVencedor{
-    width: 33%;
-    justify-content: center;
-    text-align: center;
-    font-weight: 700;
-}
-
-.selecao .nome,.selecao .VencedorFinal,.selecao .ano{
-    width: 33%;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    font-weight: 500;
-    /* border: 3px solid black; */
-    
-/* }
-
-#qtdTitulos{
-    text-align: center;
-}
-
-.container .selecao{
-    display: flex;
-    flex-direction: row;
-    border: solid 2px black;
-    height: 60px;
-    justify-content: space-around;
-    align-items: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-.selecao #anoGuerra{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-left: 38px;
-}
-
-.container #guerra{
-    height: 120px;
-    flex-direction: row;
-}
-
-#guerra span{
-    font-size: 25px;
-    font-weight: 700;
-}
-
-.selecao .nome{
-    flex-direction: row;
-}
-
-.selecao .bandeira{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-} */
 
 /* Eliminatórias */
 
@@ -292,7 +394,6 @@ padding-top: 50px;
 }
 
 #divEliminatorias .round{
-    /* border: 2px solid black; */
     height: 100%;
     width: 220px;
     flex-direction: column;
@@ -380,6 +481,7 @@ padding-top: 50px;
     width: 10%;
     font-size: 20px;
     margin-right: 5px;
+    margin-left: 5px;
 }
 
 .partidas ul #li-classificado{

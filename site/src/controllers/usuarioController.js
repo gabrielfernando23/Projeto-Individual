@@ -26,15 +26,12 @@ function listar(req, res) {
 
 function entrar(req, res) {
     var email = req.body.emailServer;
-    var senha = req.body.senhaServer;
 
     if (email == undefined) {
         res.status(400).send("Seu email está undefined!");
-    } else if (senha == undefined) {
-        res.status(400).send("Sua senha está indefinida!");
     } else {
         
-        usuarioModel.entrar(email, senha)
+        usuarioModel.entrar(email)
             .then(
                 function (resultado) {
                     console.log(`\nResultados encontrados: ${resultado.length}`);
@@ -109,6 +106,7 @@ function cadastrarTimes(req, res) {
         
         // Passe os valores como parâmetro e vá para o arquivo usuarioModel.js
         usuarioModel.cadastrarTimes(idUsuario,selecao)
+        usuarioModel.updateTimes(idUsuario)
             .then(
                 function (resultado) {
                     res.json(resultado);
@@ -126,10 +124,70 @@ function cadastrarTimes(req, res) {
     }
 }
 
+function SelecoesFavoritas(req, res) {
+    usuarioModel.SelecoesFavoritas(req, res)
+    .then(
+        function (resultado) {
+            res.json(resultado);
+            console.log("\n" + resultado);
+        }
+    ).catch(
+        function (erro) {
+            console.log(erro);
+            console.log(
+                "\nhouve um erro ao trazer os dados! Erro:",
+                erro.sqlMessage
+            );
+            res.status(500).json(erro.sqlMessage)
+        }
+    )
+}
+
+function selecaoMenosFavorita(req,res) {
+    usuarioModel.selecaoMenosFavorita(req, res)
+    .then(
+        function (resultado) {
+            res.json(resultado);
+            console.log("\n" + resultado);
+        }
+    ).catch(
+        function (erro) {
+            console.log(erro);
+            console.log(
+                "\nhouve um erro ao trazer os dados! Erro:",
+                erro.sqlMessage
+            );
+            res.status(500).json(erro.sqlMessage)
+        }
+    )
+}
+
+function selecaoComMaisTitulos(req, res) {
+    usuarioModel.selecaoComMaisTitulos(req, res)
+    .then(
+        function (resultado) {
+            res.json(resultado);
+            console.log("\n" + resultado);
+        }
+    ).catch(
+        function (erro) {
+            console.log(erro);
+            console.log(
+                "\nhouve um erro ao trazer os dados! Erro:",
+                erro.sqlMessage
+            );
+            res.status(500).json(erro.sqlMessage)
+        }
+    )
+}
+
 module.exports = {
     entrar,
     cadastrar,
     listar,
     testar,
-    cadastrarTimes
+    cadastrarTimes,
+    SelecoesFavoritas,
+    selecaoMenosFavorita,
+    selecaoComMaisTitulos
 }

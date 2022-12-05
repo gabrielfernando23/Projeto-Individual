@@ -93,13 +93,13 @@ body {
 
 .container .jogos{
   display: flex;
-  margin-top: 50px;
+  margin-top: 10px;
   background-color: white;
   border-radius: 15px;
-  width: 610px;
-  height: 400px;
+  width: 660px;
+  height: 300px;
   justify-content: space-around;
-  margin-left: 28vw;
+  margin-left: 29vw;
   flex-direction: column;
   border: solid black 2px;
   box-shadow: 3px 7px 15px black;
@@ -119,7 +119,7 @@ body {
   height: 45px;
   justify-content: center;
   align-items: center;
-  margin-left: 200px;
+  margin-left: 235px;
   margin-top: 20px;
   border: solid black 3px;
   border-radius: 35px;
@@ -129,7 +129,7 @@ body {
 
 .jogos .lista-jogos{
   display: flex;
-  width: 550px;
+  width: 600px;
   height: 400px;
   margin-left: 30px;
   margin-right: 30px;
@@ -160,7 +160,7 @@ body {
   display: flex;
   flex-direction: row;
   width: 100% ;
-  height: 45px;
+  height: 50px;
   justify-content: flex-start;
 }
 
@@ -168,25 +168,10 @@ body {
   display: flex;
   flex-direction: row;
   width: 100% ;
-  height: 45px;
+  height: 50px;
   justify-content: center;
 }
 
-.lista-jogos .jogo3{
-  display: flex;
-  flex-direction: row;
-  width: 100% ;
-  height: 45px;
-  justify-content: center;
-}
-
-.lista-jogos .jogo4{
-  display: flex;
-  flex-direction: row;
-  width: 100% ;
-  height: 45px;
-  justify-content: center;
-}
 
 .lista-jogos .time1{
   display: flex;
@@ -222,10 +207,11 @@ body {
 }
 
 .time1 .nome-selecao{
-  margin-left: 5px;
+  margin-right: 15px;
   margin-top: 5px;
   margin-bottom: 10px;
   text-align: right;
+  font-weight: 700;
 }
 
 .time1 i{
@@ -245,6 +231,7 @@ body {
   margin-top: 5px;
   margin-bottom: 10px;
   text-align: left;
+  font-weight: 700;
 }
 
 .horario span{
@@ -263,7 +250,7 @@ body {
   display: flex;
   width: 1000px;
   height: 800px;
-  margin-top: 50px;
+  margin-top: 100px;
   margin-left: 250px;
   border: 6px solid black;
   overflow: hidden;
@@ -296,7 +283,7 @@ body {
 
 .gallery #barraCraques{
   margin-top: 470px;
-  margin-left: 410px;
+  margin-left: 395px;
   
 }
 
@@ -429,54 +416,35 @@ cursor: pointer;
   height: 700px;
 }
 
-/* Carrosel de Fotos minhas */
+/* Sobre*/ 
 .fotos{
   display: flex;
   flex-direction: row;
-  border: solid 5px white;
-  height: 480px;
-  width: 700px;
+  height: 550px;
   margin-top: 50px;
-  margin-left: 380px;
-  margin-right: 50px;
-  overflow: hidden;
 }
 
-.fotos ol{
-  display: flex;
-  flex-direction:row;
-  height: 480px;
-  width: 2500px;
-  margin-left: 0px;
+.fotos .minhasFotos{
+  border: solid 2px white;
+  width: 50%;
 }
 
-.fotos #barraminhasFotos{
-  margin-top: 400px;
-  margin-left: 250px;
-  position: absolute;
-}
-
-.fotos ol #bebe{
+#foto-bebe{
+  width: 700px;
   background-image: url("../assets/imgs/gabrielzinho-corinthians.jpg");
-  background-size: cover;
+  background-size: 900px;
   background-repeat: no-repeat;
-  height: 480px;
-  width: 700px;
-  border: 2px solid white;
+  margin-left: 100px;
 }
 
-.fotos ol #taca-copa{
-  /* background-image: url("../assets/imgs/"); */
-  background-color: red;
-  height: 480px;
-  width: 700px;
+#foto-album{
+width: 600px;
+margin-right: 150px;
+background-image: url("../assets/imgs/album.jpeg");
+background-size: 500px;
+background-repeat: no-repeat;
 }
 
-.fotos ol #foto-copa{
-  background-color: purple;
-  height: 480px;
-  width: 700px;
-}
 
 /* Degradê */
 body #degrade{
@@ -492,7 +460,6 @@ body #degrade{
   height: 2500px;
   width: 100%;
   color: white;
-  /* margin-top: 150px; */
   flex-direction: column;
   justify-content: center;
 }
@@ -512,7 +479,6 @@ body #degrade{
 }
 
 .conteudo .futebol{
-  /* border: solid 2px white; */
   height: 600px;
   margin-left: 50px;
   margin-right: 25px;
@@ -529,7 +495,6 @@ body #degrade{
 }
 
 .conteudo .copa{
-  /* border: solid 2px white; */
   height: 800px;
   margin-right: 50px;
   margin-left: 25px;

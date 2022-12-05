@@ -25,4 +25,16 @@ router.post("/autenticar", function (req, res) {
     usuarioController.entrar(req, res);
 });
 
+router.get("/SelecoesFavoritas", function (req, res) {
+    usuarioController.SelecoesFavoritas(req, res);
+})
+
+router.get("/selecaoMenosFavorita", function (req, res) {
+    usuarioController.selecaoMenosFavorita(req, res);
+})
+
+router.get("/selecaoComMaisTitulos", function (req, res){
+    usuarioController.selecaoComMaisTitulos(req, res);
+})
+
 module.exports = router;

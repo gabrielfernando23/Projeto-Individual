@@ -98,15 +98,14 @@
 
 
     function entrar() {
-        aguardar();
+        // aguardar();
 
         var emailVar = email_input.value;
-        var senhaVar = senha_input.value;
 
-        if (emailVar == "" || senhaVar == "") {
+        if (emailVar == "") {
             cardErro.style.display = "block"
             mensagem_erro.innerHTML = "(Mensagem de erro para todos os campos em branco)";
-            finalizarAguardar();
+            // finalizarAguardar();
             return false;
         }
         else {
@@ -114,7 +113,6 @@
         }
 
         console.log("FORM LOGIN: ", emailVar);
-        console.log("FORM SENHA: ", senhaVar);
 
         fetch("/usuarios/autenticar", {
             method: "POST",
@@ -123,7 +121,6 @@
             },
             body: JSON.stringify({
                 emailServer: emailVar,
-                senhaServer: senhaVar
             })
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO entrar()!")
@@ -138,10 +135,14 @@
                     sessionStorage.EMAIL_USUARIO = json.email;
                     sessionStorage.NOME_USUARIO = json.nome;
                     sessionStorage.ID_USUARIO = json.idUsuario;
-
-                    setTimeout(function () {
-                        window.location = "cadastro-2.html" //redirecionamento;
-                    }, 1000); // apenas para exibir o loading
+                    sessionStorage.CADASTROU_TIMES = json.cadastrouTimes
+                    if (sessionStorage.CADASTROU_TIMES == 1) {
+                        window.location = "stats.html" 
+                    }
+                    else{
+                        window.location = "cadastro-2.html" 
+                    }
+                    
 
                 });
 
