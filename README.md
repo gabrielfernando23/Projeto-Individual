@@ -1,4 +1,4 @@
-<h3>Projeto Individual desenvolvido no 1° Semestre do curso de Análise e Desenvolvimento de Sistemas.</h3><br>
+<h3>Projeto Individual desenvolvido no 1° Semestre do curso de Análise e Desenvolvimento de Sistemas.</h3>
 Projeto proposto pelos professores e monitores da São Paulo Tech School.<br>
 Site desenvolvido em HTML, CSS E Javascript.<br>
 Banco de dados utilizando MySQL Workbench.<br>
